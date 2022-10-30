@@ -41,14 +41,30 @@ body {
   width: 30%;
 }
 .nav__title {
+  position: relative;
   width: 90px;
   height: 60px;
-  font-weight: 300;
-  font-size: 20px;
-  text-align: center;
-  color: white;
   border: 1px solid white;
   border-radius: 4px;
+  cursor: pointer;
+}
+.nav__title h1 {
+  position: absolute;
+  font-weight: 300;
+  font-size: 20px;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.nav__title img {
+  position: absolute;
+  width: 15px;
+  height: 25px;
+  left: 10px;
+  top: 23px;
+  transform: rotate();
 }
 .nav__link {
   text-decoration: none;
