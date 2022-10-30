@@ -19,7 +19,7 @@ body {
 .wrapper {
   margin: 0 auto;
   width: 100%;
-  max-width: 1120px;
+  max-width: 1160px;
 }
 
 .nav {
@@ -29,7 +29,7 @@ body {
   padding-left: 100px;
   padding-right: 120px;
   background-color: black;
-  width: 1600px;
+  width: 100%;
   height: 80px;
 }
 .nav__items {
@@ -81,14 +81,17 @@ body {
   color: #F9804B;
 }
 
+.header {
+  width: 1600px;
+}
 .header__img {
   position: relative;
   margin: 0 auto;
-  width: 1600px;
   height: 700px;
   background-image: url(../../../assets/img/Giant\ Panda.jpg);
   background-size: cover;
   background-position: center;
+  box-shadow: 0 5px #767474;
 }
 .header__bg {
   position: absolute;
@@ -141,4 +144,61 @@ body {
 .header__btn:hover {
   background: #E47209;
   cursor: pointer;
+}
+
+.main {
+  position: absolute;
+  top: 900px;
+  display: flex;
+}
+
+.one {
+  display: flex;
+}
+.one__photo {
+  margin-right: 20px;
+  width: 600px;
+  height: 400px;
+}
+.one__photo img {
+  width: 100%;
+  height: 100%;
+}
+.one__text {
+  color: #333B41;
+  width: 465px;
+  margin-left: 20px;
+  font-style: 400;
+}
+.one__text h2 {
+  font-size: 44px;
+  padding: 20px;
+  padding-top: 0;
+  line-height: 120%;
+  text-align: center;
+  margin: 0;
+}
+.one__text p {
+  line-height: 140%;
+  padding: 15px;
+}
+.one__text h3 {
+  line-height: 120%;
+  padding: 15px;
+  text-align: left;
+}
+
+.flower-one {
+  position: absolute;
+  right: 0;
+  top: 790px;
+}
+
+@media (width > 1600px) {
+  header {
+    width: 100%;
+  }
+  .header {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
