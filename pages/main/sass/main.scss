@@ -1,3 +1,5 @@
+@use 'colors' as *;
+
 *,
 *::before,
 *::after {
@@ -7,11 +9,69 @@
 }
 
 html {
-	font-size: 62, 5%;
 	scroll-behavior: smooth;
 }
 
 body {
 	font-family: 'Roboto', sans-serif;
-	font-size: 1.6rem;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1120px;
+}
+
+.nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 100px;
+	padding-right: 120px;
+	background-color: black;
+	width: 1600px;
+	height: 80px;
+
+	&__items {
+		justify-content: space-evenly;
+		width: 70%;
+	}
+
+	&__subtitle {
+		justify-content: flex-end;
+		width: 30%;
+	}
+
+	&__title {
+		font-weight: lighter;
+		font-size: 20px;
+		text-align: center;
+		color: white;
+		border: 1px solid white;
+		line-height: 20px;
+		padding: 3px 5px 3px 5px;
+		border-radius: 4px;
+
+        &:hover {
+            cursor: pointer;
+            color: $orange;
+        }
+	}
+
+	&__link {
+		text-decoration: none;
+		color: white;
+		font-weight: normal;
+        transition: color 0.3s;
+
+		&:hover {
+			color: $orange;
+            cursor: pointer;
+		}
+	}
+
+	&__link--color {
+		color: $orange;
+	
+}
 }
