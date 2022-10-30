@@ -20,7 +20,6 @@ body {
 
 .wrapper {
 	margin: 0 auto;
-	width: 100%;
 	max-width: 1160px;
 }
 
@@ -215,25 +214,42 @@ body {
 	}
 }
 
-.flower-one {
+.flower-one,
+.flower-two,
+.flower-three,
+.flower-four {
 	position: absolute;
-	right: 0;
-	top: 790px;
 }
 
+.flower-one {
+	top: 790px;
+	right: 0;
+}
+
+.flower-two {
+	top: 2340px;
+	right: 0;
+	width: 368px;
+	height: 275px;
+}
+
+.flower-three {
+	top: 2155px;
+	left: 0;
+	width: 400px;
+	height: 460px;
+}
 // section animals card
 
 .two {
-	margin-top: 120px;
 	display: flex;
-	flex-wrap: wrap;
 
 	&__button {
 		position: absolute;
 		width: 298px;
 		height: 55px;
 		left: calc(50% - 298px / 2);
-		top: 1600px;
+		top: 1550px;
 		background: $orange_fresh;
 		border-radius: 25px;
 		color: white;
@@ -247,6 +263,13 @@ body {
 			cursor: pointer;
 		}
 	}
+}
+
+.cards {
+	margin-top: 70px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 
 .card {
@@ -320,8 +343,8 @@ image {
 }
 
 .arrow {
+	top: 194%;
 	position: absolute;
-	top: 1865px;
 	z-index: 10;
 	width: 60px;
 	height: 60px;
@@ -333,11 +356,30 @@ image {
 }
 
 .arrow-slider1 {
-	right: 300px;
+	right: 10%;
 }
 
 .arrow-slider2 {
-	left: 285px;
+	left: 10%;
+}
+
+//pirc a friend section
+
+.three {
+	display: flex;
+    justify-content: center;
+	align-items: center;
+	position: absolute;
+	margin-top: 2615px;
+	width: 1600px;
+	height: 1004px;
+	background-color: $orange_grad;
+}
+
+.card-feed {
+	width: 1160px;
+	height: 836px;
+	background-color: $pink_gradient;
 }
 
 @media (width > 1600px) {
@@ -345,7 +387,8 @@ image {
 		width: 100%;
 	}
 
-	.header {
+	.header,
+	.three {
 		width: 100%;
 	}
 }
