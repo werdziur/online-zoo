@@ -292,6 +292,11 @@ body {
 	left: 145px;
 }
 
+.arrow-slider1,
+.arrow-slider2 {
+	cursor: pointer;
+}
+
 image {
 	width: 366px;
 	height: 366px;
@@ -532,7 +537,7 @@ image {
 .four {
 	display: flex;
 	position: absolute;
-	top: 4000px;
+	top: 3820px;
 	height: 575px;
 	width: 1160px;
 	justify-content: center;
@@ -544,15 +549,14 @@ image {
 	width: 1160px;
 }
 
-
 .block {
 	display: flex;
 	flex-direction: column;
 	width: 268px;
 	height: 391px;
 	background-color: $light_gray;
-	border-radius: 20px;
 	border: 2px solid $pink_gradient;
+	border-radius: 20px;
 }
 
 .block-img {
@@ -585,6 +589,123 @@ image {
 	font-size: 15px;
 	font-weight: 300;
 	line-height: 18px;
+}
+
+.title-four {
+	position: absolute;
+	top: 3740px;
+}
+
+.title-four h2 {
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 46.8px;
+	color: #333b41;
+}
+
+.feedback-button button {
+	position: absolute;
+	width: 298px;
+	height: 55px;
+	left: 0%;
+	top: 450px;
+	background: $orange_fresh;
+	border-radius: 5px;
+	color: white;
+	line-height: 54px;
+	text-align: center;
+	text-transform: uppercase;
+	border: none;
+
+	&:hover {
+		background: $orange-hover;
+		cursor: pointer;
+	}
+}
+
+//slider bar
+
+.bar {
+	position: absolute;
+	top: 415px;
+	background-color: rgb(192, 192, 192);
+	width: 55%;
+	border-radius: 5px;
+}
+
+.line {
+	background-color: #fe9013;
+	color: white;
+	padding: 0.8%;
+	text-align: right;
+	border-radius: 15px;
+}
+
+.progress {
+	width: 20%;
+}
+
+//footer
+
+.footer {
+	position: absolute;
+	top: 4500px;
+	background-color: black;
+	width: 100%;
+	height: 443px;
+	display: flex;
+	justify-content: center;
+}
+
+.footer-all {
+	padding-top: 50px;
+	display: flex;
+	width: 1160px;
+}
+
+.fa-brands {
+	color: rgba(196, 196, 196, 0.5);
+}
+
+.icons-footer {
+	margin-top: 50px;
+}
+.icon-footer {
+	padding: 10px;
+	padding-left: 0px;
+	color: white;
+}
+
+.button-footer button {
+	width: 298px;
+	height: 55px;
+	background: $orange_fresh;
+	border-radius: 5px;
+	color: white;
+	line-height: 54px;
+	text-align: center;
+	text-transform: uppercase;
+	border: none;
+	margin-top: 50px;
+}
+
+.button-footer button:hover {
+	background: $orange-hover;
+	cursor: pointer;
+}
+
+.nav-footer {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	background-color: #767474;
+	width: 100%;
+	text-decoration: none;
+}
+
+.nav-items-footer a {
+	text-decoration: none;
+	color: white;
 }
 
 @media (width > 1600px) {
