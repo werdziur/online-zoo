@@ -1,0 +1,720 @@
+@use 'colors' as *;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+	margin: 0 auto;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1160px;
+}
+
+//navigation
+
+.nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 100px;
+	padding-right: 120px;
+	background-color: black;
+	width: 100%;
+	height: 80px;
+
+	&__items {
+		justify-content: space-evenly;
+		width: 70%;
+	}
+
+	&__subtitle {
+		justify-content: flex-end;
+		width: 30%;
+	}
+
+	&__title {
+		position: relative;
+		width: 90px;
+		height: 60px;
+		border: 1px solid white;
+		border-radius: 4px;
+		cursor: pointer;
+
+		& h1 {
+			position: absolute;
+			font-weight: 300;
+			font-size: 20px;
+			color: white;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+		}
+
+		& img {
+			position: absolute;
+			width: 15px;
+			height: 25px;
+			left: 10px;
+			top: 23px;
+			transform: rotate();
+		}
+	}
+
+	&__link {
+		text-decoration: none;
+		color: white;
+		font-style: normal;
+		font-weight: 500;
+		transition: color 0.3s;
+
+		&:hover {
+			color: $orange;
+			cursor: pointer;
+		}
+	}
+
+	&__link--color {
+		color: $orange;
+	}
+}
+
+//header panda section
+
+.header {
+	width: 1600px;
+	height: 700px;
+
+	&__img {
+		position: relative;
+		margin: 0 auto;
+		height: 700px;
+		background-image: url(../../../assets/img/Giant\ Panda.jpg);
+		background-size: cover;
+		background-position: center;
+		box-shadow: 0 1px 2px 2px $gray_smoky;
+	}
+	&__bg {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+
+	&__circle {
+		position: absolute;
+		left: calc(50% - 465px / 2 + 239.5px);
+		top: 20px;
+		border-radius: 50%;
+		background: $orange_fresh;
+		width: 479px;
+		height: 479px;
+	}
+
+	&__text {
+		position: absolute;
+		width: 500.31px;
+		height: 400px;
+
+		h2 {
+			position: absolute;
+			left: 95px;
+			top: 90px;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 106.5px;
+			line-height: 75%;
+			text-align: center;
+			text-transform: uppercase;
+			color: white;
+		}
+
+		span {
+			color: $yellow;
+		}
+	}
+
+	&__btn {
+		position: absolute;
+		width: 298px;
+		height: 54px;
+		left: calc(50% - 298px / 2 + 332px);
+		top: 585px;
+		background: $orange_fresh;
+		border-radius: 25px;
+		color: white;
+		line-height: 54px;
+		text-align: center;
+		text-transform: uppercase;
+		border: none;
+
+		&:hover {
+			background: $orange-hover;
+			cursor: pointer;
+		}
+	}
+}
+
+//main section
+
+.main {
+	position: absolute;
+	top: 900px;
+}
+
+.one {
+	display: flex;
+	height: 403px;
+	padding-top: 32px;
+
+	margin-bottom: 140px;
+
+	&__photo {
+		margin-right: 35px;
+		width: 600px;
+		height: 400px;
+
+		& img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__text {
+		color: $black_blue;
+		width: 475px;
+		height: 400px;
+		margin-left: 35px;
+		font-style: 400;
+
+		& h2 {
+			margin-top: 0;
+			font-size: 48px;
+			line-height: 120%;
+			padding-bottom: 20px;
+			font-weight: 400;
+			padding-left: 10px;
+		}
+		& p {
+			line-height: 140%;
+			text-justify: auto;
+			padding-left: 10px;
+		}
+
+		& h3 {
+			line-height: 120%;
+			font-size: 24px;
+			font-weight: 400;
+			text-align: left;
+			padding-bottom: 32px;
+			padding-top: 54px;
+			padding-left: 10px;
+		}
+	}
+}
+
+//animals section
+
+.two {
+	display: flex;
+	width: 1600px;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	margin-top: 1425px;
+}
+
+.button_two {
+	position: absolute;
+	width: 298px;
+	height: 55px;
+	left: calc(50% - 298px / 2);
+	top: 2454px;
+	background: $orange_fresh;
+	border-radius: 25px;
+	color: white;
+	line-height: 54px;
+	text-align: center;
+	text-transform: uppercase;
+	border: none;
+
+	&:hover {
+		background: $orange-hover;
+		cursor: pointer;
+	}
+}
+
+.cards {
+	margin: auto 0;
+	margin-top: 70px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 1160px;
+}
+
+.card {
+	border: 1px solid $orange;
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 10px;
+	width: 368px;
+	height: 426px;
+}
+
+.arrow {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 50%;
+}
+
+.arrow-slider1 {
+	right: 145px;
+}
+
+.arrow-slider2 {
+	left: 145px;
+}
+
+.arrow-slider1,
+.arrow-slider2 {
+	cursor: pointer;
+}
+
+image {
+	width: 366px;
+	height: 366px;
+}
+
+.text {
+	display: flex;
+}
+
+.txt {
+	width: 85%;
+	font-weight: 500;
+	padding-left: 16px;
+	padding-top: 3px;
+}
+
+.txt p {
+	line-height: 18px;
+	font-weight: 300;
+	font-size: 16px;
+}
+
+.txt h3 {
+	line-height: 22.4px;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.icon-meat {
+	margin: 0;
+	justify-content: flex-end;
+}
+
+.icon-banana {
+	justify-content: flex-end;
+}
+
+.icon-meat img {
+	width: 48px;
+	height: 38px;
+	margin-top: 7px;
+}
+
+.icon-banana img {
+	width: 33px;
+	height: 37px;
+	margin-top: 8px;
+	margin-left: 10px;
+}
+
+.pandas {
+	margin-left: 0;
+}
+
+.sloth {
+	margin-left: 0;
+}
+.gorilla {
+	margin-right: 0;
+}
+
+.penguin {
+	margin-right: 0;
+}
+
+//pick a friend section
+
+.three {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	margin-top: 2610px;
+	width: 1600px;
+	height: 1004px;
+	background-color: $pink;
+}
+
+.card-feed {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 1160px;
+	height: 836px;
+	background-color: $pink2;
+	border-radius: 20px;
+
+	&__main {
+		margin: 26px;
+		margin-bottom: 0;
+	}
+
+	& h2 {
+		text-align: center;
+		color: #fe9013;
+		font-size: 48px;
+		line-height: 120%;
+		font-weight: 400;
+		height: 58px;
+		margin-bottom: 10px;
+	}
+
+	& .subtitle-main {
+		font-size: 24px;
+		line-height: 120%;
+		margin-left: 30px;
+		padding: 20px;
+		font-weight: normal;
+		font-weight: 400;
+	}
+
+	& p,
+	h5 {
+		font-size: 16px;
+		line-height: 28px;
+		padding: 20px;
+		padding-bottom: 0;
+		margin-left: 30px;
+	}
+
+	& p {
+		line-height: 20px;
+		padding-top: 10px;
+		margin-bottom: 55px;
+		width: 863px;
+	}
+
+	& span {
+		border-bottom: 1px solid #fe9013;
+	}
+
+	& h4 {
+		font-weight: 500;
+	}
+
+	& .subtitle-icons {
+		text-align: center;
+		font-size: 40px;
+		font-weight: normal;
+		margin-bottom: 20px;
+	}
+
+	&__btn {
+		position: absolute;
+		width: 298px;
+		height: 55px;
+		left: calc(50% - 298px / 2);
+		top: 790px;
+		background: $orange_fresh;
+		border-radius: 25px;
+		color: white;
+		line-height: 54px;
+		text-align: center;
+		text-transform: uppercase;
+		border: none;
+
+		&:hover {
+			background: $orange-hover;
+			cursor: pointer;
+		}
+	}
+}
+
+// feed friend icons
+
+.icons-friends {
+	display: flex;
+	width: 800px;
+	height: 244px;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.items-friends {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 168px;
+	height: 244px;
+	background-color: white;
+	border: 1px solid #fe9013;
+	border-radius: 5px;
+}
+
+.all-icons {
+	display: flex;
+	flex-direction: column;
+}
+
+.hand,
+.zoo,
+.monkey {
+	width: 168px;
+	height: 168px;
+}
+
+.hand img {
+	width: 108px;
+	height: 60px;
+}
+
+.zoo img {
+	width: 86px;
+	height: 95px;
+}
+
+.monkey img {
+	width: 124.75px;
+	height: 71.6px;
+}
+
+.text-h3 {
+	display: flex;
+	width: 168px;
+	height: 46px;
+	margin-bottom: 0;
+}
+
+.text-h3 h3 {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22.4px;
+	padding-top: 30px;
+}
+
+.vector {
+	height: 30%;
+}
+.vector img {
+	width: 69px;
+	height: 35px;
+	display: flex;
+}
+
+// testimonials
+
+.four {
+	display: flex;
+	position: absolute;
+	top: 3820px;
+	height: 575px;
+	width: 1160px;
+	justify-content: center;
+}
+
+.blocks {
+	display: flex;
+	justify-content: space-between;
+	width: 1160px;
+}
+
+.block {
+	display: flex;
+	flex-direction: column;
+	width: 268px;
+	height: 391px;
+	background-color: $light_gray;
+	border: 2px solid $pink_gradient;
+	border-radius: 20px;
+}
+
+.block-img {
+	margin-right: 10px;
+}
+
+.block-heading {
+	display: flex;
+	padding: 15px;
+	padding-bottom: 5px;
+}
+
+.block-text {
+	padding: 0 20px 0 20px;
+}
+
+.block-text p {
+	font-size: 15px;
+	line-height: 18px;
+	font-weight: 300;
+	color: #767474;
+}
+.block-title h4 {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19.2px;
+}
+.block-title p {
+	color: #bdbdbd;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 18px;
+}
+
+.title-four {
+	position: absolute;
+	top: 3740px;
+}
+
+.title-four h2 {
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 46.8px;
+	color: #333b41;
+}
+
+.feedback-button button {
+	position: absolute;
+	width: 298px;
+	height: 55px;
+	left: 0%;
+	top: 450px;
+	background: $orange_fresh;
+	border-radius: 5px;
+	color: white;
+	line-height: 54px;
+	text-align: center;
+	text-transform: uppercase;
+	border: none;
+
+	&:hover {
+		background: $orange-hover;
+		cursor: pointer;
+	}
+}
+
+//slider bar
+
+.bar {
+	position: absolute;
+	top: 415px;
+	background-color: rgb(192, 192, 192);
+	width: 55%;
+	border-radius: 5px;
+}
+
+.line {
+	background-color: #fe9013;
+	color: white;
+	padding: 0.8%;
+	text-align: right;
+	border-radius: 15px;
+}
+
+.progress {
+	width: 20%;
+}
+
+//footer
+
+.footer {
+	position: absolute;
+	top: 4500px;
+	background-color: black;
+	width: 100%;
+	height: 443px;
+	display: flex;
+	justify-content: center;
+}
+
+.footer-all {
+	padding-top: 50px;
+	display: flex;
+	width: 1160px;
+}
+
+.fa-brands {
+	color: rgba(196, 196, 196, 0.5);
+}
+
+.icons-footer {
+	margin-top: 50px;
+}
+.icon-footer {
+	padding: 10px;
+	padding-left: 0px;
+	color: white;
+}
+
+.button-footer button {
+	width: 298px;
+	height: 55px;
+	background: $orange_fresh;
+	border-radius: 5px;
+	color: white;
+	line-height: 54px;
+	text-align: center;
+	text-transform: uppercase;
+	border: none;
+	margin-top: 50px;
+}
+
+.button-footer button:hover {
+	background: $orange-hover;
+	cursor: pointer;
+}
+
+.nav-footer {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	background-color: #767474;
+	width: 100%;
+	text-decoration: none;
+}
+
+.nav-items-footer a {
+	text-decoration: none;
+	color: white;
+}
+
+@media (width > 1600px) {
+	header {
+		width: 100%;
+	}
+
+	.header,
+	.three {
+		width: 100%;
+	}
+}
