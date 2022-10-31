@@ -347,38 +347,58 @@ image {
   border-radius: 20px;
 }
 .card-feed__main {
-  margin: 60px;
+  margin: 26px;
   margin-bottom: 0;
 }
 .card-feed h2 {
   text-align: center;
-  color: #fe9103;
+  color: #fe9013;
   font-size: 48px;
   line-height: 120%;
+  font-weight: 400;
+  height: 58px;
+  margin-bottom: 10px;
 }
 .card-feed .subtitle-main {
   font-size: 24px;
   line-height: 120%;
+  margin-left: 30px;
   padding: 20px;
   font-weight: normal;
+  font-weight: 400;
 }
-.card-feed p {
+.card-feed p,
+.card-feed h5 {
   font-size: 16px;
-  line-height: 130%;
+  line-height: 28px;
   padding: 20px;
   padding-bottom: 0;
+  margin-left: 30px;
+}
+.card-feed p {
+  line-height: 20px;
+  padding-top: 10px;
+  margin-bottom: 55px;
+  width: 863px;
+}
+.card-feed span {
+  border-bottom: 1px solid #fe9013;
+}
+.card-feed h4 {
+  font-weight: 500;
 }
 .card-feed .subtitle-icons {
   text-align: center;
   font-size: 40px;
   font-weight: normal;
+  margin-bottom: 20px;
 }
 .card-feed__btn {
   position: absolute;
   width: 298px;
   height: 55px;
   left: calc(50% - 149px);
-  top: 800px;
+  top: 790px;
   background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
   border-radius: 25px;
   color: white;
@@ -408,7 +428,7 @@ image {
   width: 168px;
   height: 244px;
   background-color: white;
-  border: 1px solid #F9804B;
+  border: 1px solid #fe9013;
   border-radius: 5px;
 }
 
@@ -454,8 +474,72 @@ image {
 }
 
 .vector {
+  height: 30%;
+}
+
+.vector img {
   width: 69px;
   height: 35px;
+  display: flex;
+}
+
+.four {
+  display: flex;
+  position: absolute;
+  top: 4000px;
+  height: 575px;
+  width: 1160px;
+  justify-content: center;
+}
+
+.blocks {
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  width: 268px;
+  height: 391px;
+  background-color: #F1F3F2;
+  border-radius: 20px;
+  border: 2px solid #FEBDAB;
+}
+
+.block-img {
+  margin-right: 10px;
+}
+
+.block-heading {
+  display: flex;
+  padding: 15px;
+  padding-bottom: 5px;
+}
+
+.block-text {
+  padding: 0 20px 0 20px;
+}
+
+.block-text p {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 300;
+  color: #767474;
+}
+
+.block-title h4 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+}
+
+.block-title p {
+  color: #bdbdbd;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 18px;
 }
 
 @media (width > 1600px) {
