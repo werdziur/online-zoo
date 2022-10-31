@@ -17,6 +17,7 @@ body {
 	display: flex;
 	justify-content: center;
 	height: 100vh;
+	margin: 0 auto;
 }
 
 .wrapper {
@@ -97,6 +98,7 @@ body {
 
 .header {
 	width: 1600px;
+	height: 700px;
 
 	&__img {
 		position: relative;
@@ -134,7 +136,7 @@ body {
 			top: 90px;
 			font-style: normal;
 			font-weight: 700;
-			font-size: 106.496px;
+			font-size: 106.5px;
 			line-height: 75%;
 			text-align: center;
 			text-transform: uppercase;
@@ -176,9 +178,13 @@ body {
 
 .one {
 	display: flex;
+	height: 403px;
+	padding-top: 32px;
+
+	margin-bottom: 140px;
 
 	&__photo {
-		margin-right: 20px;
+		margin-right: 35px;
 		width: 600px;
 		height: 400px;
 
@@ -190,87 +196,76 @@ body {
 
 	&__text {
 		color: $black_blue;
-		width: 465px;
-		margin-left: 20px;
+		width: 475px;
+		height: 400px;
+		margin-left: 35px;
 		font-style: 400;
 
 		& h2 {
-			font-size: 44px;
-			padding: 20px;
-			padding-top: 0;
+			margin-top: 0;
+			font-size: 48px;
 			line-height: 120%;
-			text-align: center;
-			margin: 0;
+			padding-bottom: 20px;
+			font-weight: 400;
+			padding-left: 10px;
 		}
 		& p {
 			line-height: 140%;
-			padding: 15px;
+			text-justify: auto;
+			padding-left: 10px;
 		}
 
 		& h3 {
 			line-height: 120%;
-			padding: 15px;
+			font-size: 24px;
+			font-weight: 400;
 			text-align: left;
+			padding-bottom: 32px;
+			padding-top: 54px;
+			padding-left: 10px;
 		}
 	}
 }
 
-.flower-one,
-.flower-two,
-.flower-three,
-.flower-four {
-	position: absolute;
-}
-
-.flower-one {
-	top: 790px;
-	right: 0;
-}
-
-.flower-two {
-	top: 2300px;
-	right: 0;
-	width: 368px;
-	height: 275px;
-}
-
-.flower-three {
-	top: 2040px;
-	left: 0;
-	width: 300px;
-	height: 530px;
-}
-// section animals card
+//animals section
 
 .two {
 	display: flex;
+	width: 1600px;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	margin-top: 1425px;
+}
 
-	&__button {
-		position: absolute;
-		width: 298px;
-		height: 55px;
-		left: calc(50% - 298px / 2);
-		top: 1550px;
-		background: $orange_fresh;
-		border-radius: 25px;
-		color: white;
-		line-height: 54px;
-		text-align: center;
-		text-transform: uppercase;
-		border: none;
+.button_two {
+	position: absolute;
+	width: 298px;
+	height: 55px;
+	left: calc(50% - 298px / 2);
+	top: 2454px;
+	background: $orange_fresh;
+	border-radius: 25px;
+	color: white;
+	line-height: 54px;
+	text-align: center;
+	text-transform: uppercase;
+	border: none;
 
-		&:hover {
-			background: $orange-hover;
-			cursor: pointer;
-		}
+	&:hover {
+		background: $orange-hover;
+		cursor: pointer;
 	}
 }
 
 .cards {
+	margin: auto 0;
 	margin-top: 70px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
+	align-items: center;
+	width: 1160px;
 }
 
 .card {
@@ -278,6 +273,23 @@ body {
 	border-radius: 5px;
 	overflow: hidden;
 	margin: 10px;
+	width: 368px;
+	height: 426px;
+}
+
+.arrow {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 50%;
+}
+
+.arrow-slider1 {
+	right: 145px;
+}
+
+.arrow-slider2 {
+	left: 145px;
 }
 
 image {
@@ -291,40 +303,42 @@ image {
 
 .txt {
 	width: 85%;
-	padding: 10px;
-	// background-color: red;
-	line-height: 150%;
-	font-size: 16px;
 	font-weight: 500;
+	padding-left: 16px;
+	padding-top: 3px;
 }
 
 .txt p {
-	font-weight: normal;
-	font-size: 15px;
+	line-height: 18px;
+	font-weight: 300;
+	font-size: 16px;
+}
+
+.txt h3 {
+	line-height: 22.4px;
+	font-weight: 500;
+	font-size: 16px;
 }
 
 .icon-meat {
 	margin: 0;
 	justify-content: flex-end;
-	// background-color: orange;
 }
 
 .icon-banana {
-	// margin-left: 5px;
 	justify-content: flex-end;
-	// background-color: orange;
 }
 
 .icon-meat img {
 	width: 48px;
 	height: 38px;
-	margin-top: 15px;
+	margin-top: 7px;
 }
 
 .icon-banana img {
 	width: 33px;
 	height: 37px;
-	margin-top: 15px;
+	margin-top: 8px;
 	margin-left: 10px;
 }
 
@@ -343,41 +357,23 @@ image {
 	margin-right: 0;
 }
 
-.arrow {
-	top: 193%;
-	position: absolute;
-	z-index: 10;
-	width: 60px;
-	height: 60px;
-
-	&:hover {
-		background: $orange-hover;
-		cursor: pointer;
-	}
-}
-
-.arrow-slider1 {
-	right: 8%;
-}
-
-.arrow-slider2 {
-	left: 8%;
-}
-
-//pirc a friend section
+//pick a friend section
 
 .three {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	position: absolute;
-	margin-top: 2570px;
+	margin-top: 2610px;
 	width: 1600px;
 	height: 1004px;
 	background-color: $pink;
 }
 
 .card-feed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 	width: 1160px;
 	height: 836px;
 	background-color: $pink2;
@@ -385,13 +381,11 @@ image {
 
 	&__main {
 		margin: 60px;
-		padding: 40px;
 		margin-bottom: 0;
 	}
 
 	& h2 {
 		text-align: center;
-		padding: 20px;
 		color: #fe9103;
 		font-size: 48px;
 		line-height: 120%;
@@ -409,9 +403,6 @@ image {
 		line-height: 130%;
 		padding: 20px;
 		padding-bottom: 0;
-	}
-
-	&__icons {
 	}
 
 	& .subtitle-icons {
@@ -441,16 +432,74 @@ image {
 	}
 }
 
+// feed friend icons
+
 .icons-friends {
 	display: flex;
+    width: 800px;
+    height: 244px;
 	justify-content: space-evenly;
 	align-items: center;
+	
+	
 }
 
-.items-friends img {
+.items-friends {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	width: 168px;
 	height: 244px;
 	background-color: white;
+	border: 1px solid $orange;
+	border-radius: 5px;
+}
+
+.all-icons {
+	display: flex;
+	flex-direction: column;
+}
+
+.hand,
+.zoo,
+.monkey {
+	width: 168px;
+	height: 168px;
+}
+
+.hand img {
+	width: 108px;
+	height: 60px;
+}
+
+.zoo img {
+	width: 86px;
+	height: 95px;
+}
+
+.monkey img {
+	width: 124.75px;
+	height: 71.6px;
+}
+
+.text-h3 {
+	display: flex;
+	width: 168px;
+	height: 46px;
+	margin-bottom: 0;
+}
+
+.text-h3 h3 {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22.4px;
+	padding-top: 30px;
+}
+
+.vector {
+	width: 69px;
+	height: 35px;
 }
 
 @media (width > 1600px) {
