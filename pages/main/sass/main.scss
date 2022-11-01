@@ -190,8 +190,8 @@ body {
 	height: 600px;
 	padding: 5px 3px;
 	top: -100px;
-	right: -80px;
-	border: none;
+	right: 0px;
+	background-position: right;
 }
 
 .one {
@@ -265,8 +265,8 @@ body {
 	height: 460px;
 	padding: 5px 3px;
 	top: 730px;
-	left: -1px;
-	border: none;
+	left: 0;
+	
 }
 
 .two::after {
@@ -277,9 +277,9 @@ body {
 	width: 360px;
 	height: 270px;
 	padding: 5px 3px;
-	right: -1px;
-	top: 920px;
-	border: none;
+	right: 0px;
+  top: 920px;
+border: none;
 }
 
 .button_two {
@@ -751,17 +751,18 @@ image {
 	justify-content: center;
 }
 
-.footer::after {
-	content: '';
-	position: absolute;
-	background-image: url('../assets/img/leav_foto.png');
-	background-repeat: no-repeat;
-	width: 300px;
-	height: 295px;
-	padding: 5px 3px;
-	transform: rotatate(149.8deg);
-	top: -295px;
-	right: -53px;
+
+.footer:after {
+		content: '';
+		position: absolute;
+		background-image: url('../assets/img/leav_foto.png');
+		background-repeat: no-repeat;
+		width: 360px;
+		height: 270px;
+		padding: 5px 3px;
+		right: 0px;
+		top: -270px;
+		background-position: top right;
 }
 
 .footer-all {
