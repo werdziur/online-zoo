@@ -152,6 +152,8 @@ body {
 		position: absolute;
 		width: 298px;
 		height: 54px;
+		font-weight: 500;
+		font-size: 16px;
 		left: calc(50% - 298px / 2 + 332px);
 		top: 585px;
 		background: $orange_fresh;
@@ -242,6 +244,8 @@ body {
 	position: absolute;
 	width: 298px;
 	height: 55px;
+	font-weight: 500;
+	font-size: 16px;
 	left: calc(50% - 298px / 2);
 	top: 2454px;
 	background: $orange_fresh;
@@ -443,6 +447,8 @@ image {
 		position: absolute;
 		width: 298px;
 		height: 55px;
+		font-weight: 500;
+		font-size: 16px;
 		left: calc(50% - 298px / 2);
 		top: 790px;
 		background: $orange_fresh;
@@ -605,6 +611,8 @@ image {
 
 .feedback-button button {
 	position: absolute;
+	font-weight: 500;
+	font-size: 16px;
 	width: 298px;
 	height: 55px;
 	left: 0%;
@@ -670,14 +678,26 @@ image {
 .icons-footer {
 	margin-top: 50px;
 }
+
+
 .icon-footer {
 	padding: 10px;
 	padding-left: 0px;
 	color: white;
 }
 
+.icon-footer:hover {
+	color: rgba(75, 146, 0, 1);
+}
+
+.icon-footer i:hover {
+    color: rgba(75, 146, 0, 1);
+}
+
 .button-footer button {
 	width: 298px;
+	font-weight: 500;
+	font-size: 16px;
 	height: 55px;
 	background: $orange_fresh;
 	border-radius: 5px;
@@ -694,23 +714,101 @@ image {
 	cursor: pointer;
 }
 
-.nav-footer {
+.navfooter {
 	display: flex;
 	align-items: flex-end;
-	justify-content: space-between;
-	background-color: #767474;
-	width: 100%;
+	justify-content: space-evenly;
+	width: 137.5%;
 	text-decoration: none;
-}
+	padding-bottom: 30px;
 
-.nav-items-footer a {
-	text-decoration: none;
-	color: white;
+	&__items {
+		text-decoration: none;
+		color: white;
+		font-style: normal;
+		font-weight: 400;
+		transition: color 0.3s;
+
+		&:hover {
+			color: $orange-hover;
+		}
+	}
+
+	&__items--color {
+		text-decoration: none;
+		color: $orange;
+		font-style: normal;
+		font-weight: 400;
+		transition: color 0.3s;
+
+		&:hover {
+			color: white;
+		}
+	}
 }
 
 .subscribtion {
-	background-color: white;
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.footer-designed {
+	width: 100%;
+	margin-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.footer-designed-txt {
+	padding-top: 2.5px;
+}
+
+.footer-designed-txt p {
+	font-weight: 100;
+	font-size: 16px;
+	line-height: 20px;
+	color: rgba(255, 255, 255, 1);
+}
+
+.form-label {
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 28px;
+	padding-bottom: 15px;
+	color: white;
+}
+
+.form-input input {
+	width: 220px;
+	height: 40px;
+	border: 1px solid $orange;
+	border-radius: 2px;
+	background-color: $light_gray;
+	font-size: 16px;
+	font-weight: 400;
+	color: #bdbdbd;
+	padding-left: 5px;
+}
+
+
+
+.form-input button {
+	font-size: 16px;
+	font-weight: 400;
+	color: rgba(75, 146, 0, 1);
+	line-height: 22px;
+	border: 1px solid rgba(75, 146, 0, 1);
+	border-radius: 5px;
+	width: 129px;
+	height: 40px;
+	margin-left: 10px;
+}
+
+.form-input button:hover {
+	cursor: pointer;
 }
 
 @media (width > 1600px) {
