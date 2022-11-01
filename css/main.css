@@ -153,6 +153,22 @@ body {
 .main {
   position: absolute;
   top: 900px;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+}
+
+.main::after {
+  content: "";
+  position: absolute;
+  background-image: url(../assets/img/flower_foto1.png);
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 600px;
+  padding: 5px 3px;
+  top: -100px;
+  right: -80px;
+  border: none;
 }
 
 .one {
@@ -202,11 +218,38 @@ body {
 
 .two {
   display: flex;
-  width: 1600px;
+  width: 100%;
+  height: 1000px;
   justify-content: center;
   align-items: center;
   position: absolute;
   margin-top: 1425px;
+}
+
+.two::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../../assets/img/palm_foto.png);
+  background-repeat: no-repeat;
+  width: 880px;
+  height: 460px;
+  padding: 5px 3px;
+  top: 730px;
+  left: -1px;
+  border: none;
+}
+
+.two::after {
+  content: "";
+  position: absolute;
+  background-image: url(../../../assets/img/strelitzia\ 1.png);
+  background-repeat: no-repeat;
+  width: 360px;
+  height: 270px;
+  padding: 5px 3px;
+  right: -1px;
+  top: 920px;
+  border: none;
 }
 
 .button_two {
@@ -278,6 +321,7 @@ body {
   justify-content: center;
   width: 366px;
   height: 424px;
+  cursor: pointer;
 }
 
 .hover-txt:hover {
@@ -289,6 +333,8 @@ body {
   height: 60px;
   position: absolute;
   top: 50%;
+  cursor: pointer;
+  z-index: 0;
 }
 
 .arrow-slider1 {
@@ -297,11 +343,6 @@ body {
 
 .arrow-slider2 {
   left: 145px;
-}
-
-.arrow-slider1,
-.arrow-slider2 {
-  cursor: pointer;
 }
 
 image {
@@ -425,8 +466,10 @@ image {
   margin-bottom: 55px;
   width: 863px;
 }
-.card-feed span {
+.card-feed a {
   border-bottom: 1px solid #fe9013;
+  text-decoration: none;
+  color: black;
 }
 .card-feed h4 {
   font-weight: 500;
@@ -447,11 +490,14 @@ image {
   top: 790px;
   background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
   border-radius: 25px;
-  color: white;
   line-height: 54px;
   text-align: center;
   text-transform: uppercase;
   border: none;
+}
+.card-feed__btn a {
+  text-decoration: none;
+  color: white;
 }
 .card-feed__btn:hover {
   background: #E47209;
@@ -622,11 +668,16 @@ image {
 }
 
 .bar {
+  display: block;
   position: absolute;
   top: 415px;
   background-color: rgb(192, 192, 192);
   width: 55%;
   border-radius: 5px;
+}
+
+.bar:hover {
+  cursor: pointer;
 }
 
 .line {
