@@ -281,6 +281,41 @@ body {
 	height: 426px;
 }
 
+.hover {
+	position: absolute;
+	width: 366px;
+	height: 424px;
+    background-color: rgba(3, 3, 3, 0);
+    border-radius: 5px;
+    display: flex;
+    transition: 0.3s;
+}
+
+.hover:hover {
+	position: absolute;
+	width: 366px;
+	height: 424px;
+    background-color: rgba(17, 17, 17, 0.85);
+    border-radius: 5px;
+    z-index: 0;
+}
+
+.hover-txt {
+    z-index: -1;
+    font-size: 24px;
+    color: white;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    width: 366px;
+	height: 424px;
+}
+
+.hover-txt:hover {
+    z-index: 1;
+}
+
 .arrow {
 	width: 60px;
 	height: 60px;
@@ -679,7 +714,6 @@ image {
 	margin-top: 50px;
 }
 
-
 .icon-footer {
 	padding: 10px;
 	padding-left: 0px;
@@ -688,10 +722,11 @@ image {
 
 .icon-footer:hover {
 	color: rgba(75, 146, 0, 1);
+	cursor: pointer;
 }
 
 .icon-footer i:hover {
-    color: rgba(75, 146, 0, 1);
+	color: rgba(75, 146, 0, 1);
 }
 
 .button-footer button {
@@ -793,14 +828,12 @@ image {
 	padding-left: 5px;
 }
 
-
-
 .form-input button {
 	font-size: 16px;
 	font-weight: 400;
-	color: rgba(75, 146, 0, 1);
+	color: black;
 	line-height: 22px;
-	border: 1px solid rgba(75, 146, 0, 1);
+	border: 1px solid black;
 	border-radius: 5px;
 	width: 129px;
 	height: 40px;
