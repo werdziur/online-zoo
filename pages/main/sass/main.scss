@@ -320,6 +320,7 @@ body {
 	margin: 10px;
 	width: 368px;
 	height: 426px;
+	transition: 0.3s;
 }
 
 .hover {
@@ -332,6 +333,12 @@ body {
 	transition: 0.3s;
 }
 
+// card and txt 'animation'
+
+.card:hover {
+	transform: scale(1.05);
+}
+
 .hover:hover {
 	position: absolute;
 	width: 366px;
@@ -339,6 +346,7 @@ body {
 	background-color: rgba(17, 17, 17, 0.85);
 	border-radius: 5px;
 	z-index: 0;
+	transform: scale(1.05);
 }
 
 .hover-txt {
