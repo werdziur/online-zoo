@@ -349,7 +349,7 @@ body {
 }
 
 .circle:hover {
-  background: #E47209;
+  background: #e47209;
   width: 65px;
   height: 65px;
   cursor: pointer;
@@ -751,10 +751,14 @@ image {
 .icon-footer {
   padding: 10px;
   padding-left: 0px;
-  color: white;
 }
 
-.icon-footer:hover {
+.icon-footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.icon-footer a:hover {
   color: rgb(75, 146, 0);
   cursor: pointer;
 }
