@@ -1,0 +1,320 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #febdab 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: black;
+  width: 100%;
+  height: 80px;
+}
+.nav__items {
+  justify-content: space-evenly;
+  width: 70%;
+}
+.nav__subtitle {
+  justify-content: flex-end;
+  width: 30%;
+}
+.nav__title {
+  position: relative;
+  width: 90px;
+  height: 60px;
+  border: 1px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.nav__title h1 {
+  position: absolute;
+  font-weight: 300;
+  font-size: 20px;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.nav__title img {
+  position: absolute;
+  width: 15px;
+  height: 25px;
+  left: 10px;
+  top: 23px;
+  transform: rotate();
+}
+.nav__link {
+  text-decoration: none;
+  color: white;
+  font-style: normal;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav__link:hover {
+  color: #F9804B;
+  cursor: pointer;
+}
+.nav__link--color {
+  color: #F9804B;
+}
+
+.header {
+  width: 1600px;
+}
+.header__img {
+  position: relative;
+  margin: 0 auto;
+  height: 390px;
+  background-image: url("../assets/img/GiantPanda.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 1px 2px 2px #ABABAB;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1160px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-container {
+  padding-top: 24px;
+  margin-top: 24px;
+  background: rgba(255, 255, 255, 0.52);
+  width: 1160px;
+  height: 964px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+.donation-text h1 {
+  size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+  line-height: 47px;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.donation-text p {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  padding-bottom: 20px;
+}
+
+.donation-text h2 {
+  padding-top: 20px;
+  color: #fe9013;
+  font-size: 36px;
+  font-weight: 400;
+  padding: 30px;
+}
+
+.footer {
+  position: absolute;
+  top: 1780px;
+  background-color: black;
+  width: 100%;
+  height: 443px;
+  display: flex;
+  justify-content: center;
+  margin-top: 180px;
+}
+
+.footer:after {
+  content: "";
+  position: absolute;
+  background-image: url("../assets/img/leav_foto.png");
+  background-repeat: no-repeat;
+  width: 360px;
+  height: 270px;
+  padding: 5px 3px;
+  right: 0px;
+  top: -270px;
+  background-position: top right;
+}
+
+.footer-all {
+  padding-top: 50px;
+  display: flex;
+  width: 1160px;
+}
+
+.fa-brands {
+  color: rgba(196, 196, 196, 0.5);
+}
+
+.icons-footer {
+  margin-top: 50px;
+}
+
+.icon-footer {
+  padding: 10px;
+  padding-left: 0px;
+}
+
+.icon-footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.icon-footer a:hover {
+  color: rgb(75, 146, 0);
+  cursor: pointer;
+}
+
+.icon-footer i:hover {
+  color: rgb(75, 146, 0);
+}
+
+.button-footer button {
+  width: 298px;
+  font-weight: 500;
+  font-size: 16px;
+  height: 55px;
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  border-radius: 5px;
+  color: white;
+  line-height: 54px;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 50px;
+}
+
+.button-footer button:hover {
+  background: #E47209;
+  cursor: pointer;
+}
+
+.navfooter {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  width: 137.5%;
+  text-decoration: none;
+  padding-bottom: 30px;
+}
+.navfooter__items {
+  text-decoration: none;
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  transition: color 0.3s;
+}
+.navfooter__items:hover {
+  color: #E47209;
+}
+.navfooter__items--color {
+  text-decoration: none;
+  color: #F9804B;
+  font-style: normal;
+  font-weight: 400;
+  transition: color 0.3s;
+}
+.navfooter__items--color:hover {
+  color: white;
+}
+
+.subscribtion {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-designed {
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer-designed-txt {
+  padding-top: 2.5px;
+}
+
+.footer-designed-txt p {
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.form-label {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  padding-bottom: 15px;
+  color: white;
+}
+
+.form-input input {
+  width: 220px;
+  height: 40px;
+  border: 1px solid #F9804B;
+  border-radius: 2px;
+  background-color: #F1F3F2;
+  font-size: 16px;
+  font-weight: 400;
+  color: #bdbdbd;
+  padding-left: 5px;
+}
+
+.form-input button {
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  line-height: 22px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 129px;
+  height: 40px;
+  margin-left: 8px;
+}
+
+.form-input button:hover {
+  cursor: pointer;
+}
+
+@media (width > 1600px) {
+  header {
+    width: 100%;
+  }
+  .header,
+.three {
+    width: 100%;
+  }
+}/*# sourceMappingURL=donate.css.map */
