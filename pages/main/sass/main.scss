@@ -320,7 +320,7 @@ body {
 	margin: 10px;
 	width: 368px;
 	height: 426px;
-	transition: 0.3s;
+	transition: 0.4s;
 }
 
 .hover {
@@ -339,11 +339,24 @@ body {
 	transform: scale(1.05);
 }
 
+.card:hover .icon-banana {
+	display: none;
+}
+
+.card:hover .icon-meat {
+	display: none;
+}
+
+.card:hover .txt {
+	display: none;
+}
+
+
 .hover:hover {
 	position: absolute;
 	width: 366px;
 	height: 424px;
-	background-color: rgba(17, 17, 17, 0.85);
+	background-color: rgba(17, 17, 17, 0.7);
 	border-radius: 5px;
 	z-index: 0;
 	transform: scale(1.05);
@@ -360,10 +373,11 @@ body {
 	width: 366px;
 	height: 424px;
 	cursor: pointer;
+	transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .hover-txt:hover {
-	z-index: 1;
+	z-index: -1;
 }
 
 .circle img {
@@ -416,6 +430,7 @@ image {
 	font-weight: 500;
 	padding-left: 16px;
 	padding-top: 3px;
+	transition: 0.4s;
 }
 
 .txt p {
