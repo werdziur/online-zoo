@@ -264,7 +264,7 @@ body {
 .scale-txt {
   font-size: 16px;
   font-weight: 400;
-  color: #333B41;
+  color: #333b41;
   padding: 10px;
 }
 
@@ -275,12 +275,48 @@ body {
   width: 180px;
 }
 
-.radio-buttons div {
-  padding: 0 10px 0 10px;
-}
-
 .radio-buttons label {
   margin-left: 5px;
+}
+
+.monthly-contribution {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.radio-buttons input[type=radio] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #fff;
+  margin: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid orange;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.52);
+  transform: translateY(-0.075em);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.radio-buttons input[type=radio]::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 20px 20px #fe9013;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.radio-buttons input[type=radio]:checked::before {
+  transform: scale(1);
 }
 
 .footer {
