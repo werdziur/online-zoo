@@ -130,6 +130,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	margin-bottom: 200px;
+	width: 1160px;
 }
 
 .sub-container {
@@ -191,7 +192,6 @@ body {
 	justify-content: center;
 	align-items: center;
 	z-index: 20;
-	
 }
 .scale-range {
 	display: flex;
@@ -216,13 +216,6 @@ body {
 	z-index: 0;
 }
 
-.scale-inputs {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 915px;
-}
-
 .scale-amount {
 	display: flex;
 	flex-direction: row;
@@ -235,26 +228,36 @@ body {
 }
 
 .scale-amount :nth-child(1) {
-	padding-right: 57px;
+	padding-right: 25px;
 }
 .scale-amount :nth-child(2) {
-	padding-right: 58px;
+	padding-right: 35px;
 }
 .scale-amount :nth-child(3) {
-	padding-right: 50px;
+	padding-right: 45px;
 }
 .scale-amount :nth-child(4) {
-	padding-right: 70px;
+	padding-right: 45px;
 }
 .scale-amount :nth-child(5) {
-	padding-right: 70px;
+	padding-right: 40px;
 }
 .scale-amount :nth-child(6) {
-	padding-right: 80px;
+	padding-right: 45px;
 }
 .scale-amount :nth-child(7) {
-	padding-right: 75px;
+	padding-right: 50px;
 }
+
+// orange rounds
+
+.scale-inputs {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 915px;
+}
+
 
 .marked {
 	color: #fe9013;
@@ -262,7 +265,7 @@ body {
 
 .input-roundXL {
 	position: relative;
-	border:3px solid #FE9013;
+	border: 2px solid #fe9013;
 	border-radius: 50%;
 	width: 40px;
 	height: 40px;
@@ -277,7 +280,7 @@ body {
 	top: 50%;
 	right: 50%;
 	transform: translate(50%, -50%);
-	border:3px solid #FE9013;
+	border: 2px solid #fe9013;
 	border-radius: 50%;
 	width: 23px;
 	height: 23px;
@@ -291,21 +294,34 @@ body {
 	background-color: #ffee2e;
 	z-index: 10;
 	appearance: none;
-	margin: 0;
 	width: 10px;
 	height: 10px;
 	border-radius: 50%;
 	cursor: pointer;
+	display: flex;
+	// justify-content: space-evenly;
+	// align-items: center;
+}
+
+.scale-inputs input::before {
+	content: '';
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	transform: scale(0);
+	transition: 120ms transform ease-in-out;
+	box-shadow: inset 1em 1em orange;
+}
+
+.scale-inputs input:checked::before {
+	transform: scale(1);
 }
 
 .zindex {
 	z-index: 20;
 }
 
-
-
-
-
+/////
 
 .diet {
 	display: flex;
