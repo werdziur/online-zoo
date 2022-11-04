@@ -179,15 +179,20 @@ body {
 	&__scale {
 		display: flex;
 		flex-direction: column;
-		align-items:center;
+		align-items: center;
 		justify-content: space-around;
 		height: 280px;
 	}
-
-
 }
 
-
+.range {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 20;
+	
+}
 .scale-range {
 	display: flex;
 	justify-content: center;
@@ -214,12 +219,8 @@ body {
 .scale-inputs {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	width: 915px;
-}
-
-.scale-inputs input {
-	z-index: 10;
-	position: relative;
 }
 
 .scale-amount {
@@ -237,25 +238,74 @@ body {
 	padding-right: 57px;
 }
 .scale-amount :nth-child(2) {
-	padding-right: 60px;
+	padding-right: 58px;
 }
 .scale-amount :nth-child(3) {
-	padding-right: 53px;
+	padding-right: 50px;
 }
 .scale-amount :nth-child(4) {
-	padding-right: 68px;
+	padding-right: 70px;
 }
 .scale-amount :nth-child(5) {
-	padding-right: 68px;
+	padding-right: 70px;
 }
 .scale-amount :nth-child(6) {
-	padding-right: 75px;
+	padding-right: 80px;
 }
 .scale-amount :nth-child(7) {
-	padding-right: 86px;
+	padding-right: 75px;
 }
 
-// }
+.marked {
+	color: #fe9013;
+}
+
+.input-roundXL {
+	position: relative;
+	border:3px solid #FE9013;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	z-index: 20;
+}
+
+.input-roundS {
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%, -50%);
+	border:3px solid #FE9013;
+	border-radius: 50%;
+	width: 23px;
+	height: 23px;
+	z-index: 20;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.scale-inputs input {
+	background-color: #ffee2e;
+	z-index: 10;
+	appearance: none;
+	margin: 0;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.zindex {
+	z-index: 20;
+}
+
+
+
+
+
 
 .diet {
 	display: flex;
