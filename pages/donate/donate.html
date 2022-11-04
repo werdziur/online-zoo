@@ -15,27 +15,41 @@
 </head>
 
 <body>
-    <header>
-        <nav class="nav">
-            <div class="nav nav__items">
-                <div class="nav__title">
+    <nav class="nav">
+        <div class="nav-main">
 
+
+            <div class="logo">
+                <div class="nav-title">
                     <a href="../main/main.html">
                         <h1>PetStory <br>online</h1><img src="../../assets/img/bamboo.svg" alt="bamboo icon">
                     </a>
                 </div>
-                <a href="../main/main.html" class="nav__link nav__link--color">About</a>
-                <a href="#" class="nav__link">Map</a>
-                <a href="#" class="nav__link">Zoos</a>
-                <a href="donate.html" class="nav__link">Donate</a>
-                <a href="#" class="nav__link">Contact Us</a>
             </div>
-            <div class="nav nav__subtitle">
-                <a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online" class="nav__link"
-                    target="_blank">Designed
-                    by &copy</a>
+
+            <div class="links-main">
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="../main/main.html" class="nav-link"><span>About</span></a></li>
+                        <li><a href="#" class="nav-link">Map</a></li>
+                        <li><a href="#" class="nav-link">Zoos</a></li>
+                        <li><a href="donate.html" class="nav-link">Donate</a></li>
+                        <li><a href="#" class="nav-link">Contact Us</a></li>
+                    </ul>
+                </div>
             </div>
-        </nav>
+
+            <div class="figma-main">
+                <div class="nav-subtitle">
+                    <a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online" class="nav-link"
+                        target="_blank">Designed
+                        by &copy</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <header>
         <div class="header">
             <div class="header__img">
             </div>
@@ -68,47 +82,77 @@
                 <div class="panda-svg"><img src="../../assets/img/panda_widget1.svg" alt=""></div>
             </div>
 
+            <div class="range">
+                <div class="scale-range">
+                    <div class="inside-line"></div>
+                    <div>
+                        <form class="scale-inputs">
+                            <div class="zindex">
+                                <div><input id="amount-5000" name="amount-of-money" value="5000" type="radio">
+                                </div>
+                            </div>
+                            <div class="zindex">
+                                <div><input id="amount-2000" value="2000" name="amount-of-money" type="radio">
+                                </div>
+                            </div>
+                            <div class="input-roundXL">
+                                <div class="input-roundS"><input id="amount-1000" class='input-marked' value="1000"
+                                        name="amount-of-money" type="radio">
+                                </div>
+                            </div>
 
+                            <div class="zindex">
+                                <div><input id="amount-500" value="500" name="amount-of-money" type="radio">
+                                </div>
+                            </div>
 
-            <div class="">
-                <div>
-                    <div><input type="radio">
-                        <input type="radio">
-                        <input type="radio">
-                        <input type="radio">
-                        <input type="radio">
-                        <input type="radio">
-                        <input type="radio">
-                        <input type="radio">
+                            <div class="zindex">
+                                <div><input id="amount-250" value="250" name="amount-of-money" type="radio">
+                                </div>
+                            </div>
+
+                            <div class="zindex">
+                                <div><input id="amount-100" value="100" name="amount-of-money" type="radio">
+                                </div>
+                            </div>
+
+                            <div class="zindex">
+                                <div><input id="amount-50" value="50" name="amount-of-money" type="radio">
+                                </div>
+                            </div>
+
+                            <div class="zindex">
+                                <div><input id="amount-25" value="25" name="amount-of-money" type="radio">
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
+
                 <div class="scale-amount">
-                    <div>$5000</div>
-                    <div>$2000</div>
-                    <div>$1000</div>
-                    <div>$500</div>
-                    <div>$250</div>
-                    <div>$100</div>
-                    <div>$50</div>
-                    <div>$25</div>
+                    <div><label for="amount-5000">$5000</label></div>
+                    <div><label for="amount-2000">$2000</label></div>
+                    <div class="marked"><label for="amount-1000">$1000</label></div>
+                    <div><label for="amount-500">$500</label></div>
+                    <div><label for="amount-250">$250</label></div>
+                    <div><label for="amount-100">$100</label></div>
+                    <div><label for="amount-50">$50</label></div>
+                    <div><label for="amount-25">$25</label></div>
                 </div>
             </div>
 
 
-
-
-
             <div class="sub-container__scale">
-                <div class="scale-div"><input class="scale-input" type="number" name="amount"
+                <div class="scale-div"><input class="scale-input" type="number" min="1" max="9999" name="amount"
                         placeholder="Another amount"></div>
 
                 <div class="radio-buttons">
                     <div class="monthly-contribution">
-                        <input type="radio" name="values" id="monthly" value="monthly" checked>
+                        <input type="radio" name="values" id="monthly" value="monthly">
                         <label for="monthly">Monthly</label>
                     </div>
                     <div class="monthly-contribution">
-                        <input type="radio" name="values" id="once" value="once">
+                        <input type="radio" name="values" id="once" value="once" checked>
                         <label for="once">Once</label>
                     </div>
 
@@ -119,29 +163,18 @@
                 <div class="scale-txt">
                     <p>Share with your friends on social networks</p>
                 </div>
-
-
-        </di>
-
+            </div>
         </div>
-
-
-
-
-
-
-
-
     </main>
-
-
     <footer class="footer">
         <div class="footer-all">
             <div class="footer-one">
-                <div class="nav__title logo-footer">
-                    <a href="main.html">
-                        <h1>PetStory <br>online</h1><img src="../../assets/img/bamboo.svg" alt="bamboo icon">
-                    </a>
+                <div class="logo">
+                    <div class="nav-title">
+                        <a href="../main/main.html">
+                            <h1>PetStory <br>online</h1><img src="../../assets/img/bamboo.svg" alt="bamboo icon">
+                        </a>
+                    </div>
                 </div>
                 <div class="button-footer"><a href="donate.html" target="_blank"><button>DONATE FOR
                             VOLUTEERS</button></a>
