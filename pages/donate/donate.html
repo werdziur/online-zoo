@@ -72,7 +72,7 @@
                 <div class="scale-range">
                     <div class="inside-line"></div>
                     <div>
-                        <div class="scale-inputs">
+                        <form class="scale-inputs">
                             <div class="zindex">
                                 <div><input id="amount-5000" name="amount-of-money" value="5000" type="radio">
                                 </div>
@@ -111,7 +111,7 @@
                                 <div><input id="amount-25" value="25" name="amount-of-money" type="radio">
                                 </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
 
@@ -129,7 +129,7 @@
 
 
             <div class="sub-container__scale">
-                <div class="scale-div"><input class="scale-input" type="number" name="amount"
+                <div class="scale-div"><input class="scale-input" type="number" min="1" max="9999" name="amount"
                         placeholder="Another amount"></div>
 
                 <div class="radio-buttons">
@@ -138,7 +138,7 @@
                         <label for="monthly">Monthly</label>
                     </div>
                     <div class="monthly-contribution">
-                        <input type="radio" name="values" id="once" value="once">
+                        <input type="radio" name="values" id="once" value="once" checked>
                         <label for="once">Once</label>
                     </div>
 
