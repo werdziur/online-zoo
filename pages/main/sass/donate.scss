@@ -8,9 +8,9 @@
 	padding: 0;
 }
 
-html {
-	scroll-behavior: smooth;
-}
+// html {
+// 	scroll-behavior: smooth;
+// }
 
 body {
 	font-family: 'Roboto', sans-serif;
@@ -492,6 +492,10 @@ input[type='number'] {
 	background: $orange-hover;
 	cursor: pointer;
 }
+
+.donation-btn button:active {
+	background: #4b9200;
+}
 .scale-txt {
 	font-size: 16px;
 	font-weight: 400;
@@ -543,7 +547,7 @@ input[type='number'] {
 	border-radius: 50%;
 	transform: scale(0);
 	transition: 120ms transform ease-in-out;
-	box-shadow: inset 20px 20px #fe9013;
+	box-shadow: inset 21px 21px #4b9200;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -606,12 +610,20 @@ input[type='number'] {
 }
 
 .icon-footer a:hover {
-	color: rgba(75, 146, 0, 1);
+	color: $orange-hover;
 	cursor: pointer;
 }
 
 .icon-footer i:hover {
-	color: rgba(75, 146, 0, 1);
+	color: $orange-hover;
+}
+
+.icon-footer a:active {
+	color: #4b9200;
+}
+
+.icon-footer i:active {
+	color: #4b9200;
 }
 
 .button-footer button {
@@ -632,6 +644,10 @@ input[type='number'] {
 .button-footer button:hover {
 	background: $orange-hover;
 	cursor: pointer;
+}
+
+.button-footer button:active {
+	background: #4b9200;
 }
 
 .navfooter {
@@ -697,10 +713,12 @@ input[type='number'] {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
+	justify-content: center;
 }
 
 .footer-designed-txt {
 	padding-top: 2.5px;
+	width: 250px;
 }
 
 .footer-designed-txt p {
@@ -711,7 +729,19 @@ input[type='number'] {
 	padding-bottom: 5px;
 }
 
+.footer-designed-txt a {
+	text-decoration: none;
+}
 
+.footer-designed-txt p:hover {
+	color: #fe9013;
+	text-decoration: 1px underline #fe9013;
+}
+
+.footer-designed-txt p:active {
+	color: #4b9200;
+	text-decoration: 1px underline #4b9200;
+}
 
 .form-label {
 	font-size: 24px;
@@ -736,9 +766,9 @@ input[type='number'] {
 .form-input button {
 	font-size: 16px;
 	font-weight: 400;
-	color: black;
+	color: #d31414;
 	line-height: 22px;
-	border: 1px solid black;
+	border: 1px solid #d31414;
 	border-radius: 5px;
 	width: 129px;
 	height: 40px;
@@ -747,6 +777,11 @@ input[type='number'] {
 
 .form-input button:hover {
 	cursor: pointer;
+}
+
+.form-input button:active {
+	color: #4b9200;
+	border: 1px solid #4b9200;
 }
 
 @media (width > 1600px) {
