@@ -55,13 +55,12 @@ body {
 	display: flex;
 	justify-content: flex-start;
 	width: 100px;
-	margin: 5px;
 }
 
 .nav-title {
 	position: relative;
-	width: 90px;
-	height: 60px;
+	width: 85px;
+	height: 50px;
 	border: 1px solid white;
 	border-radius: 4px;
 	cursor: pointer;
@@ -83,7 +82,7 @@ body {
 	width: 15px;
 	height: 25px;
 	left: 10px;
-	top: 23px;
+	top: 17px;
 	transform: rotate();
 }
 
@@ -91,6 +90,7 @@ body {
 	line-height: 80px;
 	height: 80px;
 	width: 560px;
+	margin-left: 15px;
 }
 .nav-links ul {
 	display: flex;
@@ -154,20 +154,20 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 200px;
+	margin-bottom: 180px;
 	width: 1160px;
+	height: 100%;
 }
 
 .sub-container {
 	padding-top: 24px;
-	margin-top: 24px;
 	background: rgba(255, 255, 255, 0.52);
 	width: 1160px;
-	height: 964px;
+	height: 960px;
 	padding-left: 24px;
 	padding-right: 24px;
 	border-radius: 20px;
-	margin-top: 30px;
+	margin-top: 18px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -176,21 +176,22 @@ body {
 	&__title {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 		align-items: center;
 
 		& h2 {
 			font-size: 48px;
 			font-weight: 400;
 			color: #fe9013;
-			padding-bottom: 10px;
+			padding-bottom: 20px;
+			padding-right: 20px;
 		}
 
 		& p {
-			padding-top: 10px;
 			font-size: 24px;
 			font-weight: 400;
 			color: #333b41;
+			margin-bottom: 30px;
+			padding-right: 140px;
 		}
 	}
 
@@ -200,6 +201,7 @@ body {
 		justify-content: space-around;
 		align-items: center;
 		width: 580px;
+		padding-right: 30px;
 	}
 
 	&__scale {
@@ -217,12 +219,13 @@ body {
 	justify-content: center;
 	align-items: center;
 	z-index: 20;
+	padding-bottom: 9px;
+	padding-right: 5px;
 }
 
 .scale-title {
 	justify-content: flex-start;
 	width: 976px;
-	
 }
 
 .scale-title p {
@@ -341,8 +344,6 @@ body {
 	border-radius: 50%;
 	cursor: pointer;
 	display: flex;
-	// justify-content: space-evenly;
-	// align-items: center;
 }
 
 .scale-inputs input::before {
@@ -405,14 +406,13 @@ body {
 }
 
 .donation-text h1 {
-	size: 36px;
+	font-size: 36px;
 	font-weight: 400;
 	text-transform: uppercase;
 	color: white;
 	line-height: 47px;
 	padding-top: 40px;
-	padding-bottom: 10px;
-	letter-spacing: 1px;
+	padding-bottom: 5px;
 }
 
 .donation-text p {
@@ -429,6 +429,8 @@ body {
 	font-size: 36px;
 	font-weight: 400;
 	padding: 30px;
+	padding-bottom: 40px;
+	padding-left: 0;
 }
 
 //scale
@@ -437,15 +439,14 @@ body {
 	border-radius: 2px;
 	display: flex;
 	align-items: center;
-	margin-top: 5px;
-	padding: 0 10px 0 10px;
+	padding-bottom: 10px;
 }
 
 .scale-input {
 	background-color: rgba(255, 255, 255, 0.52);
 	border: none;
-	width: 235px;
-	height: 54px;
+	width: 270px;
+	height: 55px;
 	border-radius: 2px;
 	background-image: url('../../../assets/img/Vector-scale.svg');
 	background-repeat: no-repeat;
@@ -469,9 +470,10 @@ input[type='number'] {
 }
 
 ////
-///
-///
-///
+//
+.donation-btn {
+	padding-bottom: 20px;
+}
 .donation-btn button {
 	width: 298px;
 	height: 54px;
@@ -494,7 +496,8 @@ input[type='number'] {
 	font-size: 16px;
 	font-weight: 400;
 	color: #333b41;
-	padding: 10px;
+	padding: 20px;
+	// line-height: 28px;
 }
 
 // radio buttons monthly or once contribution
@@ -504,6 +507,7 @@ input[type='number'] {
 	justify-content: space-between;
 	align-items: center;
 	width: 180px;
+	padding-bottom: 30px;
 }
 
 .radio-buttons label {
@@ -554,13 +558,14 @@ input[type='number'] {
 //footer
 
 .footer {
-	background-color: black;
+	background-color: #111115;
 	width: 100%;
-	height: 443px;
+	height: 460px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding-bottom: 30px;
+	margin-top: 10px;
 }
 
 .footer:after {
@@ -577,7 +582,7 @@ input[type='number'] {
 }
 
 .footer-all {
-	padding-top: 50px;
+	padding-top: 55px;
 	display: flex;
 	width: 1160px;
 }
@@ -587,7 +592,7 @@ input[type='number'] {
 }
 
 .icons-footer {
-	margin-top: 50px;
+	margin-top: 40px;
 }
 
 .icon-footer {
@@ -633,17 +638,18 @@ input[type='number'] {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 110%;
+	width: 120%;
 	text-decoration: none;
-	padding-bottom: 10px;
+	padding-bottom: 50px;
 	height: 388px;
 
 	& ul {
 		display: flex;
 		width: 100%;
 		align-items: flex-end;
-		justify-content: space-evenly;
+		justify-content: space-around;
 		height: 100%;
+		padding-left: 100px;
 	}
 
 	& a {
@@ -682,11 +688,12 @@ input[type='number'] {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	margin-left: 30px;
 }
 
 .footer-designed {
 	width: 100%;
-	margin-bottom: 10px;
+	margin-bottom: 40px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
@@ -701,13 +708,16 @@ input[type='number'] {
 	font-size: 16px;
 	line-height: 20px;
 	color: rgba(255, 255, 255, 1);
+	padding-bottom: 5px;
 }
+
+
 
 .form-label {
 	font-size: 24px;
 	font-weight: 400;
 	line-height: 28px;
-	padding-bottom: 15px;
+	padding-bottom: 5px;
 	color: white;
 }
 
@@ -732,7 +742,7 @@ input[type='number'] {
 	border-radius: 5px;
 	width: 129px;
 	height: 40px;
-	margin-left: 20px;
+	margin-left: 10px;
 }
 
 .form-input button:hover {
