@@ -194,6 +194,17 @@ body {
   z-index: 20;
 }
 
+.scale-title {
+  justify-content: flex-start;
+  width: 976px;
+}
+
+.scale-title p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+
 .scale-range {
   display: flex;
   justify-content: center;
