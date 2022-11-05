@@ -50,8 +50,8 @@ body {
 
 .nav-title {
 	position: relative;
-	width: 90px;
-	height: 60px;
+	width: 85px;
+	height: 55px;
 	border: 1px solid white;
 	border-radius: 4px;
 	cursor: pointer;
@@ -73,7 +73,7 @@ body {
 	width: 15px;
 	height: 25px;
 	left: 10px;
-	top: 23px;
+	top: 18px;
 	transform: rotate();
 }
 
@@ -130,18 +130,17 @@ body {
 		height: 700px;
 		background-image: url('../assets/img/GiantPanda.jpg');
 		background-size: cover;
-		background-position: center;
-		box-shadow: 0 1px 2px 2px $gray_smoky;
+		background-position: center bottom;
 	}
 
 	&__circle {
 		position: absolute;
-		left: calc(50% - 465px / 2 + 239.5px);
-		top: 20px;
+		left: calc(50% - 465px / 2 + 240px);
+		top: 15px;
 		border-radius: 50%;
 		background: $orange_fresh;
-		width: 479px;
-		height: 479px;
+		width: 465px;
+		height: 465px;
 	}
 
 	&__text {
@@ -151,8 +150,8 @@ body {
 
 		h2 {
 			position: absolute;
-			left: 95px;
-			top: 90px;
+			left: 80px;
+			top: 70px;
 			font-style: normal;
 			font-weight: 700;
 			font-size: 106.5px;
@@ -174,7 +173,7 @@ body {
 		font-weight: 500;
 		font-size: 16px;
 		left: calc(50% - 298px / 2 + 332px);
-		top: 585px;
+		top: 550px;
 		background: $orange_fresh;
 		border-radius: 25px;
 		color: white;
@@ -229,8 +228,10 @@ body {
 
 	&__photo {
 		margin-right: 35px;
-		width: 600px;
-		height: 400px;
+		width: 620px;
+		height: 410px;
+		padding-right: 12px;
+		padding-bottom: 8px;
 
 		& img {
 			width: 100%;
@@ -242,8 +243,8 @@ body {
 
 	&__text {
 		color: $black_blue;
-		width: 475px;
-		height: 400px;
+		width: 480px;
+		height: 410px;
 		margin-left: 35px;
 		font-style: 400;
 
@@ -283,9 +284,9 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding-top: 20px;
+	padding-top: 40px;
 	padding-bottom: 20px;
-	margin-top: 75px;
+	margin-top: 85px;
 }
 
 .two::before {
@@ -310,7 +311,7 @@ body {
 	height: 270px;
 	padding: 5px 3px;
 	right: 0px;
-	bottom: -145px;
+	bottom: -150px;
 	border: none;
 	z-index: -100;
 }
@@ -353,6 +354,7 @@ body {
 	border-radius: 5px;
 	overflow: hidden;
 	margin: 10px;
+	margin-left: 18px;
 	width: 368px;
 	height: 426px;
 	transition: 0.4s;
@@ -431,7 +433,7 @@ body {
 	width: 60px;
 	height: 60px;
 	position: absolute;
-	top: 42.5%;
+	top: 43.5%;
 	transition: width height background 0.4s;
 }
 
@@ -443,11 +445,11 @@ body {
 }
 
 .arrow1 {
-	right: 145px;
+	right: 139px;
 }
 
 .arrow2 {
-	left: 145px;
+	left: 139px;
 }
 
 image {
@@ -523,11 +525,11 @@ image {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 1000px;
+	height: 1015px;
 	width: 100%;
-	margin-top: 145px;
+	margin-top: 155px;
 	margin-bottom: 70px;
-	padding: 90px;
+	padding: 95px;
 	background: linear-gradient(
 			315.75deg,
 			rgba(254, 210, 144, 0.7) 30.06%,
@@ -556,13 +558,13 @@ image {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 825px;
+	height: 890px;
 	background-color: rgba(253, 253, 255, 0.52);
 	border-radius: 20px;
 
 	&__main {
-		margin: 26px;
-		margin-bottom: 0;
+		margin: 15px;
+		margin-bottom: 8px;
 	}
 
 	& h2 {
@@ -578,26 +580,28 @@ image {
 	& .subtitle-main {
 		font-size: 24px;
 		line-height: 120%;
-		margin-left: 30px;
+		margin-left: 40px;
 		padding: 20px;
 		font-weight: normal;
 		font-weight: 400;
+		
+		
 	}
 
 	& p,
 	h5 {
 		font-size: 16px;
-		line-height: 28px;
+		line-height: 20px;
 		padding: 20px;
 		padding-bottom: 0;
-		margin-left: 30px;
+		margin-left: 40px;
 	}
 
 	& p {
 		line-height: 20px;
 		padding-top: 10px;
 		margin-bottom: 55px;
-		width: 863px;
+		width: 910px;
 	}
 
 	& a {
@@ -613,9 +617,11 @@ image {
 
 	& .subtitle-icons {
 		text-align: center;
-		font-size: 40px;
+		font-size: 38px;
 		font-weight: normal;
 		margin-bottom: 20px;
+		margin-left: 4px;
+		letter-spacing: 0.5px;
 	}
 
 	&__btn {
@@ -643,7 +649,7 @@ image {
 }
 
 .button-donation {
-	margin-top: 60px;
+	margin-top: 80px;
 }
 
 // feed friend icons
@@ -727,7 +733,7 @@ image {
 	height: 575px;
 	justify-content: center;
 	width: 100%;
-	margin-top: 70px;
+	margin-top: 90px;
 	margin-bottom: 100px;
 }
 
@@ -737,7 +743,7 @@ image {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	margin-bottom: 2px;
-	margin-top: 20px;
+	margin-top: 25px;
 }
 
 .block {
@@ -797,6 +803,7 @@ image {
 	width: 1160px;
 	margin-top: 20px;
 	margin-bottom: 20px;
+	padding-bottom: 10px;
 }
 .feedback-button button {
 	font-weight: 500;
@@ -810,6 +817,7 @@ image {
 	text-align: center;
 	text-transform: uppercase;
 	border: none;
+	
 
 	&:hover {
 		background: $orange-hover;
@@ -822,7 +830,7 @@ image {
 .bar {
 	display: block;
 	background-color: rgb(192, 192, 192);
-	width: 30%;
+	width: 38%;
 	border-radius: 5px;
 	margin-bottom: 20px;
 }
@@ -846,14 +854,14 @@ image {
 //footer
 
 .footer {
-	background-color: black;
+	background-color: #111115;
 	height: 443px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	padding-top: 20px;
-	margin-top: 85px;
+	padding-top: 50px;
+	margin-top: 80px;
 	padding-bottom: 30px;
 }
 
@@ -867,7 +875,7 @@ image {
 	padding: 5px 3px;
 	right: 0px;
 	background-position: top right;
-	top: 4240px;
+	top: 4290px;
 	z-index: 100;
 }
 
@@ -880,7 +888,7 @@ image {
 }
 
 .icons-footer {
-	margin-top: 50px;
+	margin-top: 28px;
 }
 
 .icon-footer {
@@ -914,7 +922,7 @@ image {
 	text-align: center;
 	text-transform: uppercase;
 	border: none;
-	margin-top: 50px;
+	margin-top: 60px;
 }
 
 .button-footer button:hover {
@@ -926,17 +934,18 @@ image {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 110%;
+	width: 120%;
 	text-decoration: none;
-	padding-bottom: 10px;
+	padding-bottom: 35px;
 	height: 388px;
 
 	& ul {
 		display: flex;
 		width: 100%;
 		align-items: flex-end;
-		justify-content: space-evenly;
+		justify-content: space-around;
 		height: 100%;
+		padding-left: 100px;
 	}
 
 	& a {
@@ -975,11 +984,12 @@ image {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	margin-left: 30px;
 }
 
 .footer-designed {
 	width: 100%;
-	margin-bottom: 10px;
+	margin-bottom: 40px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
@@ -1025,7 +1035,7 @@ image {
 	border-radius: 5px;
 	width: 129px;
 	height: 40px;
-	margin-left: 20px;
+	margin-left: 10px;
 }
 
 .form-input button:hover {
