@@ -176,6 +176,9 @@ body {
   background: #E47209;
   cursor: pointer;
 }
+.header__btn:active {
+  background-color: #4b9200;
+}
 
 .main {
   display: flex;
@@ -313,6 +316,9 @@ body {
   background: #E47209;
   cursor: pointer;
 }
+.button-two button:active {
+  background: #4b9200;
+}
 
 .cards {
   margin-top: 70px;
@@ -415,6 +421,10 @@ body {
   width: 65px;
   height: 65px;
   cursor: pointer;
+}
+
+.circle:active {
+  background-color: #4b9200;
 }
 
 .arrow1 {
@@ -584,6 +594,9 @@ image {
 .card-feed__btn:hover {
   background: #E47209;
   cursor: pointer;
+}
+.card-feed__btn:active {
+  background: #4b9200;
 }
 
 .button-donation {
@@ -761,6 +774,9 @@ image {
   background: #E47209;
   cursor: pointer;
 }
+.feedback-button button:active {
+  background: #4b9200;
+}
 
 .bar {
   display: block;
@@ -768,6 +784,7 @@ image {
   width: 38%;
   border-radius: 5px;
   margin-bottom: 20px;
+  border: 1px solid #FEBDAB;
 }
 
 .bar:hover {
@@ -780,6 +797,10 @@ image {
   padding: 0.8%;
   text-align: right;
   border-radius: 15px;
+}
+
+.line:active {
+  background-color: #4b9200;
 }
 
 .progress {
@@ -835,12 +856,20 @@ image {
 }
 
 .icon-footer a:hover {
-  color: rgb(75, 146, 0);
+  color: #E47209;
   cursor: pointer;
 }
 
 .icon-footer i:hover {
-  color: rgb(75, 146, 0);
+  color: #E47209;
+}
+
+.icon-footer a:active {
+  color: #4B9200;
+}
+
+.icon-footer i:active {
+  color: #4B9200;
 }
 
 .button-footer button {
@@ -861,6 +890,10 @@ image {
 .button-footer button:hover {
   background: #E47209;
   cursor: pointer;
+}
+
+.button-footer button:active {
+  background: #4b9200;
 }
 
 .navfooter {
@@ -920,10 +953,13 @@ image {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  justify-content: center;
 }
 
 .footer-designed-txt {
-  padding-top: 2.5px;
+  padding-top: 10px;
+  width: 250px;
+  height: 40px;
 }
 
 .footer-designed-txt p {
@@ -931,6 +967,23 @@ image {
   font-size: 16px;
   line-height: 20px;
   color: rgb(255, 255, 255);
+  padding-bottom: 5px;
+}
+
+.footer-designed-txt a {
+  text-decoration: none;
+}
+
+.footer-designed-txt p:hover {
+  color: #fe9013;
+  -webkit-text-decoration: 1px underline #fe9013;
+          text-decoration: 1px underline #fe9013;
+}
+
+.footer-designed-txt p:active {
+  color: #4b9200;
+  -webkit-text-decoration: 1px underline #4b9200;
+          text-decoration: 1px underline #4b9200;
 }
 
 .form-label {
@@ -956,9 +1009,9 @@ image {
 .form-input button {
   font-size: 16px;
   font-weight: 400;
-  color: black;
+  color: #d31414;
   line-height: 22px;
-  border: 1px solid black;
+  border: 1px solid #d31414;
   border-radius: 5px;
   width: 129px;
   height: 40px;
@@ -967,6 +1020,13 @@ image {
 
 .form-input button:hover {
   cursor: pointer;
+  border: 2px solid #E47209;
+  color: #E47209;
+}
+
+.form-input button:active {
+  border: 2px solid #4b9200;
+  color: #4b9200;
 }
 
 @media (width > 1600px) {
