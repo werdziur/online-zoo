@@ -266,6 +266,7 @@ body {
 	color: #333b41;
 	font-size: 26px;
 	font-weight: 500;
+	padding-top: 5px;
 }
 
 .scale-amount label {
@@ -279,19 +280,19 @@ body {
 	padding-right: 35px;
 }
 .scale-amount :nth-child(3) {
-	padding-right: 45px;
+	padding-right: 30px;
 }
 .scale-amount :nth-child(4) {
 	padding-right: 45px;
 }
 .scale-amount :nth-child(5) {
-	padding-right: 40px;
+	padding-right: 50px;
 }
 .scale-amount :nth-child(6) {
 	padding-right: 45px;
 }
 .scale-amount :nth-child(7) {
-	padding-right: 50px;
+	padding-right: 60px;
 }
 
 // orange rounds
@@ -333,6 +334,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	cursor: pointer;
 }
 
 .scale-inputs input {
@@ -361,7 +363,39 @@ body {
 }
 
 .zindex {
+	position: relative;
+	// border: 2px solid #fe9013;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
 	z-index: 20;
+}
+
+.round-inactive {
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%, -50%);
+	// border: 2px solid #fe9013;
+	border-radius: 50%;
+	width: 23px;
+	height: 23px;
+	z-index: 20;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.index-start {
+margin-left: -20px;
+}
+
+.index-end {
+	margin-right: -20px;
 }
 
 /////
@@ -516,6 +550,7 @@ input[type='number'] {
 
 .radio-buttons label {
 	margin-left: 5px;
+	cursor: pointer;
 }
 
 .monthly-contribution {
