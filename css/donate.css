@@ -114,10 +114,10 @@ body {
   position: relative;
   margin: 0 auto;
   height: 390px;
-  background-image: url("../assets/img/GiantPanda.jpg");
+  background-image: url("../assets/img/giant-panda-donate-page.png");
   background-size: cover;
   background-position: center;
-  box-shadow: 0 1px 2px 2px #ABABAB;
+  width: 100%;
 }
 
 .wrapper {
@@ -454,7 +454,7 @@ body {
   width: 270px;
   height: 55px;
   border-radius: 2px;
-  background-image: url("../../../assets/img/Vector-scale.svg");
+  background-image: url("../assets/img/Vector-scale.svg");
   background-repeat: no-repeat;
   background-position: 90% 50%;
   padding-left: 10px;
@@ -570,19 +570,6 @@ input[type=number] {
   align-items: center;
   padding-bottom: 30px;
   margin-top: 10px;
-}
-
-.footer:after {
-  content: "";
-  position: absolute;
-  background-image: url("../assets/img/leav_foto.png");
-  background-repeat: no-repeat;
-  width: 360px;
-  height: 270px;
-  padding: 5px 3px;
-  right: 0px;
-  top: -270px;
-  background-position: top right;
 }
 
 .nav-title p {
