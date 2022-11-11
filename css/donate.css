@@ -585,6 +585,18 @@ input[type=number] {
   background-position: top right;
 }
 
+.nav-title p {
+  display: inline-block;
+  position: absolute;
+  font-weight: 300;
+  font-size: 20px;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 .footer-all {
   padding-top: 55px;
   display: flex;
@@ -747,7 +759,7 @@ input[type=number] {
   color: white;
 }
 
-.form-input input {
+.input-email {
   width: 228px;
   height: 40px;
   border: 1px solid #F9804B;
@@ -759,25 +771,46 @@ input[type=number] {
   padding-left: 5px;
 }
 
-.form-input button {
+.input-button {
   font-size: 16px;
   font-weight: 400;
-  color: #d31414;
+  color: #333b41;
   line-height: 22px;
-  border: 1px solid #d31414;
+  border: 1px solid #333b41;
   border-radius: 5px;
   width: 129px;
   height: 40px;
   margin-left: 10px;
 }
 
-.form-input button:hover {
+.input-button:hover {
   cursor: pointer;
 }
 
-.form-input button:active {
+.input-button:active {
   color: #4b9200;
   border: 1px solid #4b9200;
+}
+
+.input-email:valid {
+  border: 1px solid #4b9200;
+  background-color: #bfd1ab;
+  color: #000000;
+}
+
+form:invalid input[type=submit] {
+  color: #333b41;
+  border: 1px solid #333b41;
+}
+
+form:valid input[type=submit] {
+  border: 1px solid #4b9200;
+  color: #4b9200;
+}
+
+form:invalid input[type=email] {
+  border: 1px solid red;
+  color: #000000;
 }
 
 @media (width > 1600px) {
