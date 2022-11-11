@@ -6,6 +6,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	// border: none;
 }
 
 // html {
@@ -136,10 +137,10 @@ body {
 		position: relative;
 		margin: 0 auto;
 		height: 390px;
-		background-image: url('../assets/img/GiantPanda.jpg');
+		background-image: url('../assets/img/giant-panda-donate-page.png');
 		background-size: cover;
 		background-position: center;
-		box-shadow: 0 1px 2px 2px $gray_smoky;
+		width: 100%;
 	}
 }
 
@@ -482,7 +483,7 @@ body {
 	width: 270px;
 	height: 55px;
 	border-radius: 2px;
-	background-image: url('../../../assets/img/Vector-scale.svg');
+	background-image: url('../assets/img/Vector-scale.svg');
 	background-repeat: no-repeat;
 	background-position: 90% 50%;
 	padding-left: 10px;
@@ -607,18 +608,6 @@ input[type='number'] {
 	margin-top: 10px;
 }
 
-.footer:after {
-	content: '';
-	position: absolute;
-	background-image: url('../assets/img/leav_foto.png');
-	background-repeat: no-repeat;
-	width: 360px;
-	height: 270px;
-	padding: 5px 3px;
-	right: 0px;
-	top: -270px;
-	background-position: top right;
-}
 
 //logo
 
@@ -826,7 +815,6 @@ input[type='number'] {
 	margin-left: 10px;
 }
 
-
 .input-button:hover {
 	cursor: pointer;
 }
@@ -836,30 +824,26 @@ input[type='number'] {
 	border: 1px solid #4b9200;
 }
 
-
 .input-email:valid {
 	border: 1px solid #4b9200;
 	background-color: #bfd1ab;
 	color: #000000;
 }
 
-form:invalid input[type="submit"] {
+form:invalid input[type='submit'] {
 	color: #333b41;
 	border: 1px solid #333b41;
-  }
+}
 
-  form:valid input[type="submit"] {
+form:valid input[type='submit'] {
 	border: 1px solid #4b9200;
 	color: #4b9200;
-  }
+}
 
-  form:invalid input[type="email"] {
+form:invalid input[type='email'] {
 	border: 1px solid red;
 	color: #000000;
-  }
-
-
-
+}
 
 @media (width > 1600px) {
 	header {
