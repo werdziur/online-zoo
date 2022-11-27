@@ -119,6 +119,10 @@ body {
 	align-items: center;
 }
 
+.hamburger-menu {
+	display: none;
+}
+
 //header panda section
 
 header {
@@ -1148,6 +1152,11 @@ form:invalid input[type='email'] {
 
 @media (max-width: 1600px) {
 	//nav
+
+	.hamburger-menu {
+		display: none;
+	}
+
 	.nav-link {
 		padding-left: 8px;
 	}
@@ -1612,8 +1621,26 @@ form:invalid input[type='email'] {
 	.wrapper {
 		width: 640px;
 	}
+
+	.hamburger-menu i {
+		color: white;
+	}
+
+	.hamburger-menu {
+		display: flex;
+		margin-right: 20px;
+		
+	}
+
 	.nav {
 		height: 34px;
+		position: fixed;
+		top: 0;
+		max-width: 100vw;
+	}
+
+	.links-main {
+		display: none;
 	}
 	.nav-link {
 		display: none;
@@ -1625,8 +1652,12 @@ form:invalid input[type='email'] {
 		display: none;
 	}
 
-	.logo {
-		margin-left: 60px;
+	.nav-main {
+		width: 640px;
+	}
+
+	.logo-menu {
+		margin-left: 0px;
 	}
 
 	.nav-title {
@@ -1651,8 +1682,9 @@ form:invalid input[type='email'] {
 	}
 
 	.header {
-		padding-bottom: 0px;
-		margin-bottom: 10px;
+		padding-bottom: 100px;
+		margin-bottom: 100px;
+		margin-top: 34px;
 
 		&__img {
 			height: 339px;
@@ -1660,7 +1692,7 @@ form:invalid input[type='email'] {
 		}
 
 		&__circle {
-			left: 330px;
+			left: calc(50% - 237px / 2 + 130px);
 			top: 10px;
 			width: 237px;
 			height: 237px;
@@ -1678,7 +1710,7 @@ form:invalid input[type='email'] {
 		}
 
 		&__btn {
-			left: 20px;
+			left: calc(50% - 245px / 2 - 180px);
 			top: 245px;
 		}
 	}
@@ -1686,6 +1718,7 @@ form:invalid input[type='email'] {
 	//main section
 
 	.main {
+		margin-top: 34px;
 		padding-top: 0px;
 		padding-bottom: 40px;
 	}
@@ -1951,8 +1984,8 @@ form:invalid input[type='email'] {
 
 		& p {
 			margin: 0;
-			margin-top: 0px;
-			padding-bottom: 0px;
+			margin-top: -10px;
+			padding-bottom: 13px;
 			width: 100%;
 		}
 
@@ -2053,7 +2086,7 @@ form:invalid input[type='email'] {
 
 	.four {
 		height: 468px;
-		margin-top: 95px;
+		margin-top: 98px;
 		margin-bottom: 0px;
 		width: 640px;
 		padding-bottom: 150px;
@@ -2110,7 +2143,7 @@ form:invalid input[type='email'] {
 		width: 248px;
 		margin-top: 5px;
 		margin-bottom: 0px;
-		margin-left: 20px;
+		margin-left: 10px;
 	}
 	.feedback-button button {
 		font-weight: 400;
@@ -2153,7 +2186,7 @@ form:invalid input[type='email'] {
 
 	.footer {
 		background-color: #111115;
-		height: 282px;
+		height: 283px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -2179,8 +2212,8 @@ form:invalid input[type='email'] {
 
 	.logo-footer {
 		position: absolute;
-		top: 10px;
-		left: -40px;
+		top: 5px;
+		left: 25px;
 		width: 82px;
 		height: 52px;
 		border-radius: 2px;
@@ -2221,7 +2254,7 @@ form:invalid input[type='email'] {
 		margin-top: 28px;
 		position: absolute;
 		right: 10px;
-		top: -20px;
+		top: -25px;
 	}
 
 	.icons-footer span {
@@ -2274,13 +2307,19 @@ form:invalid input[type='email'] {
 
 	.footer-designed {
 		position: absolute;
-		bottom: -15px;
-		left: 5px;
-		width: 630px;
+		bottom: -10px;
+		right: 10px;
+		width: 250px;
 	}
 
 	.footer-designed p {
 		padding-bottom: 10px;
-		width: 245px;
+		width: 250px;
 	}
+}
+
+
+
+@media (max-width: 640px) {
+
 }
