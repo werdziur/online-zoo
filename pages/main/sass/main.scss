@@ -1259,8 +1259,8 @@ form:invalid input[type='email'] {
 				padding: 0;
 				margin: 0;
 				padding-top: 0px;
-				padding-bottom: 50px;
-				line-height: 110%;
+				padding-bottom: 60px;
+				line-height: 130%;
 				padding-right: 10px;
 			}
 
@@ -1288,7 +1288,6 @@ form:invalid input[type='email'] {
 		padding: 0;
 		bottom: -250px;
 		left: 0px;
-		
 	}
 
 	.two::after {
@@ -1300,11 +1299,9 @@ form:invalid input[type='email'] {
 	}
 
 	.button-two button {
-		margin-top: 70px;
+		margin-top: 55px;
 		margin-bottom: 50px;
 	}
-
-
 
 	.cards {
 		margin-top: 0px;
@@ -1342,14 +1339,17 @@ form:invalid input[type='email'] {
 
 	.cheetah {
 		margin-left: 15px;
+		margin-top: 85px;
 	}
 
 	.sloth {
 		margin-left: 15px;
+		margin-top: 85px;
 	}
 
 	.penguin {
 		margin-left: 15px;
+		margin-top: 85px;
 	}
 
 	.hover {
@@ -1425,7 +1425,7 @@ form:invalid input[type='email'] {
 
 	.three {
 		height: 870px;
-		margin-top: 230px;
+		margin-top: 235px;
 		margin-bottom: 70px;
 		// padding: 95px;
 	}
@@ -1440,7 +1440,7 @@ form:invalid input[type='email'] {
 			padding: 0;
 			margin: 0;
 			padding-top: 10px;
-			padding-left: 15px;
+			padding-left: 10px;
 			margin-bottom: 8px;
 		}
 		& h3 {
@@ -1463,11 +1463,11 @@ form:invalid input[type='email'] {
 			padding-right: 40px;
 			margin: 0;
 			margin-top: 20px;
-			padding-bottom: 10px;
+			padding-bottom: 15px;
 		}
 
 		& .subtitle-icons {
-			margin-bottom: 20px;
+			margin-bottom: 10px;
 			margin-left: 4px;
 			padding-top: 12px;
 		}
@@ -1481,10 +1481,10 @@ form:invalid input[type='email'] {
 
 	.four {
 		height: 468px;
-		margin-top: 130px;
+		margin-top: 140px;
 		margin-bottom: 65px;
 		width: 950px;
-		padding-bottom: 10px;
+		padding-bottom: 40px;
 	}
 
 	.four::after {
@@ -1499,15 +1499,12 @@ form:invalid input[type='email'] {
 		background-position: top right;
 		top: 3775px;
 		z-index: 100;
-	
-
-		
 	}
 
 	.blocks {
 		justify-content: center;
 		padding-top: 0px;
-		padding-bottom: 15px;
+		padding-bottom: 20px;
 		width: 950px;
 	}
 
@@ -1515,7 +1512,7 @@ form:invalid input[type='email'] {
 		width: 294px;
 		height: 391px;
 		margin-bottom: 0px;
-		margin-right: 15px;
+		margin-right: 12px;
 		margin-left: 15px;
 	}
 
@@ -1525,9 +1522,9 @@ form:invalid input[type='email'] {
 
 	.feedback-button {
 		width: 950px;
-		margin-top: 60px;
+		margin-top: 50px;
 		margin-bottom: 30px;
-		// padding-bottom: 20px;
+		margin-left: 15px;
 	}
 
 	//slider bar
@@ -1540,8 +1537,8 @@ form:invalid input[type='email'] {
 
 	.footer {
 		height: 443px;
-		padding-top: 40px;
-		margin-top: 75px;
+		padding-top: 50px;
+		margin-top: 65px;
 		padding-bottom: 30px;
 		padding-left: 30px;
 		padding-right: 50px;
@@ -1552,13 +1549,16 @@ form:invalid input[type='email'] {
 		display: none;
 	}
 
-
 	//logo
 
 	//
 
 	.icons-footer {
-		margin-top: 35px;
+		margin-top: 31px;
+	}
+
+	.icon-footer {
+		padding-bottom: 8px;
 	}
 
 	.button-footer button {
@@ -1566,7 +1566,7 @@ form:invalid input[type='email'] {
 	}
 
 	.navfooter {
-		padding-bottom: 30px;
+		padding-bottom: 35px;
 		& ul {
 			justify-content: space-between;
 			padding-left: 0px;
