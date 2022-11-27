@@ -1130,7 +1130,7 @@ form:invalid input[type=email] {
     padding: 8px;
     width: 970px;
     margin: 0;
-    margin-bottom: 83px;
+    margin-bottom: 80px;
   }
   .one__photo {
     margin-right: 15px;
@@ -1160,7 +1160,7 @@ form:invalid input[type=email] {
     padding: 0;
     margin: 0;
     padding-top: 0px;
-    padding-bottom: 48px;
+    padding-bottom: 50px;
     line-height: 110%;
     padding-right: 10px;
   }
@@ -1173,29 +1173,29 @@ form:invalid input[type=email] {
     height: 800px;
     padding-top: 40px;
     padding-bottom: 20px;
-    margin-top: 85px;
-    width: 950px;
+    margin-top: 95px;
+    width: 100%;
   }
   .two::before {
-    width: 386px;
-    height: 202px;
-    padding: 5px 3px;
-    bottom: -200px;
-    left: -20px;
+    width: 300px;
+    height: 350px;
+    padding: 0;
+    bottom: -250px;
+    left: 0px;
   }
   .two::after {
-    width: 241px;
-    height: 180px;
-    padding: 5px 3px;
-    right: 0;
-    bottom: -150px;
+    width: 350px;
+    height: 250px;
+    padding: 0;
+    right: 0px;
+    bottom: -240px;
   }
   .button-two button {
-    margin-top: 50px;
+    margin-top: 70px;
     margin-bottom: 50px;
   }
   .cards {
-    margin-top: 10px;
+    margin-top: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1203,32 +1203,33 @@ form:invalid input[type=email] {
     padding-bottom: 0px;
     width: 1000px;
     padding: 10px;
-    margin-left: 20px;
+    margin-left: 0px;
   }
   .card {
-    margin: 20px;
+    margin: 10px;
+    margin-right: 10px;
     margin-left: 0px;
     width: 294px;
     height: 354px;
     margin-top: 70px;
   }
   .gorilla {
-    margin-left: 10px;
+    margin-left: 15px;
   }
   .eagle {
-    margin-left: 10px;
+    margin-left: 15px;
   }
   .pandas {
-    margin-left: 10px;
+    margin-left: 15px;
   }
   .cheetah {
-    margin-left: 10px;
+    margin-left: 15px;
   }
   .sloth {
-    margin-left: 10px;
+    margin-left: 15px;
   }
   .penguin {
-    margin-left: 10px;
+    margin-left: 15px;
   }
   .hover {
     width: 294px;
@@ -1249,7 +1250,7 @@ form:invalid input[type=email] {
     width: 60px;
     height: 60px;
     position: absolute;
-    top: 41.8%;
+    top: 40.9%;
   }
   .circle:hover {
     background: #e47209;
@@ -1258,10 +1259,10 @@ form:invalid input[type=email] {
     cursor: pointer;
   }
   .arrow1 {
-    right: 320px;
+    right: 350px;
   }
   .arrow2 {
-    left: 330px;
+    left: 355px;
   }
   .image {
     width: 294px;
@@ -1287,7 +1288,7 @@ form:invalid input[type=email] {
   }
   .three {
     height: 870px;
-    margin-top: 240px;
+    margin-top: 230px;
     margin-bottom: 70px;
   }
   .card-feed {
@@ -1337,6 +1338,19 @@ form:invalid input[type=email] {
     margin-bottom: 65px;
     width: 950px;
     padding-bottom: 10px;
+  }
+  .four::after {
+    content: "";
+    position: absolute;
+    background-image: url("../assets/img/leav_foto.png");
+    background-repeat: no-repeat;
+    width: 320px;
+    height: 270px;
+    padding: 5px 3px;
+    right: 0px;
+    background-position: top right;
+    top: 3775px;
+    z-index: 100;
   }
   .blocks {
     justify-content: center;
