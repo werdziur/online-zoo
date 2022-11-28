@@ -1297,7 +1297,7 @@ form:invalid input[type='email'] {
 		padding: 0;
 		bottom: -385px;
 		left: 0px;
-		background-image: url('/assets/img/palm_foto\ small.png');
+		background-image: url('../assets/img/palm_foto\ small.png');
 	}
 
 	.two::after {
@@ -1306,7 +1306,7 @@ form:invalid input[type='email'] {
 		padding: 0;
 		right: 0px;
 		bottom: -308px;
-		background-image: url('/assets/img/strelitzia\ 1\ small.png');
+		background-image: url('../assets/img/strelitzia\ 1\ small.png');
 		background-position: top right;
 	}
 
@@ -1629,7 +1629,6 @@ form:invalid input[type='email'] {
 	.hamburger-menu {
 		display: flex;
 		margin-right: 20px;
-		
 	}
 
 	.nav {
@@ -1793,14 +1792,14 @@ form:invalid input[type='email'] {
 	}
 
 	.two::before {
-		background-image: url('/assets/img/palm_foto\ tablet.png');
+		background-image: url('../assets/img/palm_foto\ tablet.png');
 		bottom: -300px;
 		left: 0px;
 	}
 
 	.two::after {
 		bottom: -272px;
-		background-image: url('/assets/img/strelitzia\ 1\ tablet.png');
+		background-image: url('../assets/img/strelitzia\ 1\ tablet.png');
 		right: 0px;
 		background-position: top right;
 	}
@@ -2196,17 +2195,17 @@ form:invalid input[type='email'] {
 		padding-bottom: 30px;
 	}
 
-	.footer::after {
-		content: '';
-		position: absolute;
-		background-image: url('../assets/img/leav_foto tablet.png');
-		background-repeat: no-repeat;
-		padding: 5px 3px;
-		right: 0px;
-		background-position: top right;
-		top: 4290px;
-		z-index: 100;
-	}
+	// .footer::after {
+	// 	content: '';
+	// 	position: absolute;
+	// 	background-image: url('../assets/img/leav_foto tablet.png');
+	// 	background-repeat: no-repeat;
+	// 	padding: 5px 3px;
+	// 	right: 0px;
+	// 	background-position: top right;
+	// 	top: 4290px;
+	// 	z-index: 100;
+	// }
 
 	//logo
 
@@ -2318,8 +2317,6 @@ form:invalid input[type='email'] {
 	}
 }
 
-
-
 @media (max-width: 640px) {
 	.wrapper {
 		width: 320px;
@@ -2327,12 +2324,10 @@ form:invalid input[type='email'] {
 
 	.hamburger-menu {
 		margin-right: 10px;
-		
 	}
 
 	.nav {
 		height: 34px;
-		
 	}
 
 	.nav-main {
@@ -2429,7 +2424,7 @@ form:invalid input[type='email'] {
 				line-height: 130%;
 				padding: 0;
 				margin: 0;
-				padding-bottom:15px;
+				padding-bottom: 15px;
 				padding-right: 10px;
 			}
 
@@ -2437,7 +2432,6 @@ form:invalid input[type='email'] {
 				padding: 0;
 				padding-bottom: 10px;
 				padding-top: 8px;
-
 			}
 		}
 	}
@@ -2450,18 +2444,17 @@ form:invalid input[type='email'] {
 		padding-bottom: 40px;
 		margin-top: 0px;
 		margin-bottom: 0;
-		
 	}
 
 	.two::before {
-		background-image: url('/assets/img/palm_foto\ mobile.png');
+		background-image: url('../assets/img/palm_foto\ mobile.png');
 		bottom: -280px;
 		left: 0px;
 	}
 
 	.two::after {
 		bottom: -185px;
-		background-image: url('/assets/img/strelitzia\ 1\ mobile.png');
+		background-image: url('../assets/img/strelitzia\ 1\ mobile.png');
 		right: 0px;
 		background-position: top right;
 	}
@@ -2474,7 +2467,7 @@ form:invalid input[type='email'] {
 	.cards {
 		margin-top: 5px;
 		justify-content: space-around;
-		align-items:center;
+		align-items: center;
 		padding-top: 0px;
 		padding-bottom: 0px;
 		width: 320px;
@@ -2491,16 +2484,14 @@ form:invalid input[type='email'] {
 		margin-top: 0px;
 	}
 
-
 	.gorilla {
 		margin: 0;
 		margin-top: 13px;
-		
 	}
 
 	.eagle {
-	margin: 0;
-	margin-top: 13px;
+		margin: 0;
+		margin-top: 13px;
 	}
 
 	.pandas {
@@ -2512,7 +2503,8 @@ form:invalid input[type='email'] {
 		margin-top: 20px;
 	}
 
-	.penguin, .cheetah {
+	.penguin,
+	.cheetah {
 		display: none;
 	}
 
@@ -2537,7 +2529,6 @@ form:invalid input[type='email'] {
 		width: 300px;
 		padding: 0;
 		padding-bottom: 300px;
-		
 
 		& h2 {
 			padding: 0;
@@ -2551,10 +2542,9 @@ form:invalid input[type='email'] {
 		& h3 {
 			width: 100%;
 			padding: 0px;
-			margin:0px;
+			margin: 0px;
 			font-size: 16px;
 			text-align: start;
-
 		}
 
 		& p,
@@ -2603,8 +2593,6 @@ form:invalid input[type='email'] {
 		height: 725px;
 		flex-direction: column;
 		margin-top: 0px;
-
-		
 	}
 
 	.items-friends {
@@ -2618,7 +2606,6 @@ form:invalid input[type='email'] {
 		width: 168px;
 		height: 168px;
 		margin-right: 0px;
-		
 	}
 
 	.monkey {
@@ -2629,14 +2616,12 @@ form:invalid input[type='email'] {
 	.zoo {
 		margin: 0px;
 		padding: 0;
-		
 	}
 
 	.hand {
 		margin: 0px;
 		padding: 0;
 		margin-top: 20px;
-		
 	}
 
 	.icons-friends ::before {
@@ -2679,12 +2664,12 @@ form:invalid input[type='email'] {
 		margin-bottom: 0px;
 		width: 320px;
 		padding-bottom: 0px;
-		
+
 		padding-top: 0;
 	}
 
 	.four::after {
-		background-image: url('/assets/img/leav_foto\ mobile.png');
+		background-image: url('../assets/img/leav_foto\ mobile.png');
 		padding: 5px 3px;
 		right: 0px;
 		top: 3870px;
@@ -2698,7 +2683,6 @@ form:invalid input[type='email'] {
 		padding-bottom: 0px;
 		width: 320px;
 		height: 500px;
-		
 	}
 
 	.block {
@@ -2711,7 +2695,6 @@ form:invalid input[type='email'] {
 		margin-left: 10px;
 		margin-top: 10px;
 	}
-
 
 	.block-text {
 		overflow: hidden;
@@ -2733,8 +2716,7 @@ form:invalid input[type='email'] {
 		height: 54px;
 		line-height: 50px;
 	}
-	
-	
+
 	.title-four h2 {
 		font-size: 24px;
 		line-height: 25px;
@@ -2797,8 +2779,6 @@ form:invalid input[type='email'] {
 		display: flex;
 	}
 
-
-
 	.icons-footer {
 		margin-top: 28px;
 		position: absolute;
@@ -2816,7 +2796,6 @@ form:invalid input[type='email'] {
 		padding: 10px;
 		margin-left: 15px;
 	}
-
 
 	.button-footer {
 		top: 60px;
