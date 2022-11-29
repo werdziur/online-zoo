@@ -949,10 +949,10 @@ form:invalid input[type=email] {
   .scale-amount :nth-child(7) {
     padding-right: 60px;
   }
-  .first-number {
+  .amount-5000 {
     display: none;
   }
-  .amount-5000 {
+  #invisible-dot {
     display: none;
   }
   .scale-inputs {
@@ -1042,6 +1042,9 @@ form:invalid input[type=email] {
   .index-start {
     margin-left: -20px;
   }
+  .index-start2 {
+    margin-left: -20px;
+  }
   .index-end {
     margin-right: -20px;
   }
@@ -1054,7 +1057,8 @@ form:invalid input[type=email] {
   .diet-header {
     font-size: 72px;
     font-weight: 500;
-    padding: 5px;
+    padding-top: 20px;
+    padding-left: 25px;
   }
   .diet :nth-of-type(2) {
     font-size: 16px;
@@ -1148,6 +1152,7 @@ form:invalid input[type=email] {
     align-items: center;
     width: 180px;
     padding-bottom: 30px;
+    margin-right: 30px;
   }
   .radio-buttons label {
     margin-left: 5px;
