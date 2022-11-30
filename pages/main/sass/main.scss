@@ -1150,7 +1150,7 @@ form:invalid input[type='email'] {
 
 //media queries
 
-@media (max-width: 1600px) {
+@media (max-width: 1599px) {
 	//nav
 
 	.hamburger-menu {
@@ -1617,7 +1617,7 @@ form:invalid input[type='email'] {
 	}
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 999px) {
 	.wrapper {
 		width: 640px;
 	}
@@ -2194,18 +2194,6 @@ form:invalid input[type='email'] {
 		margin-top: 0px;
 		padding-bottom: 30px;
 	}
-
-	// .footer::after {
-	// 	content: '';
-	// 	position: absolute;
-	// 	background-image: url('../assets/img/leav_foto tablet.png');
-	// 	background-repeat: no-repeat;
-	// 	padding: 5px 3px;
-	// 	right: 0px;
-	// 	background-position: top right;
-	// 	top: 4290px;
-	// 	z-index: 100;
-	// }
 
 	//logo
 

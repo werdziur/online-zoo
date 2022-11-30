@@ -1,6 +1,16 @@
-const paymentAmountInput = document.querySelector('.payment-form input[name="another-amount"]');
+const paymentAmountInput = document.querySelectorAll('.scale-inputs input[name="amount-of-money"]')
 
-paymentAmountInput.oninput = (event) => {
-    if (paymentAmountInput.value.length > paymentAmountInput.maxLength) {
-        paymentAmountInput.value = paymentAmountInput.value.slice(0, paymentAmountInput.maxLength);
-}};
+//choose amount scale
+function clickInput() {
+	const previous = document.querySelector('.round-active')
+	const previous2 = document.querySelector('.zindex-active')
+
+	if (previous && previous2) {
+		previous.classList.remove('round-active')
+		previous2.classList.remove('zindex-active')
+	}
+	this.parentNode.classList.add('round-active')
+	this.parentNode.parentNode.classList.add('zindex-active')
+}
+
+paymentAmountInput.forEach(e => e.addEventListener('click', clickInput, true))
