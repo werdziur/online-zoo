@@ -344,8 +344,6 @@ header {
 	cursor: pointer;
 }
 
-
-
 .scale-inputs input {
 	background-color: #ffee2e;
 	z-index: 10;
@@ -430,7 +428,6 @@ header {
 	justify-content: center;
 	cursor: pointer;
 }
-
 
 .index-start {
 	margin-left: -20px;
@@ -791,7 +788,6 @@ input[type='number'] {
 	flex-direction: column;
 	justify-content: space-between;
 	margin-left: 35px;
-
 }
 
 .footer-designed {
@@ -844,7 +840,6 @@ input[type='number'] {
 	margin-top: -15px;
 	margin-left: -5px;
 	padding-left: 5px;
-
 }
 
 .input-email {
@@ -954,7 +949,7 @@ form:invalid input[type='email'] {
 	}
 
 	.sub-container {
-		padding-top: 10px;
+		padding-top: 0px;
 		width: 940px;
 		height: 918px;
 		padding-left: 20px;
@@ -965,6 +960,8 @@ form:invalid input[type='email'] {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+			margin-bottom: 50px;
+			margin-top: 5px;
 
 			& h2 {
 				font-size: 48px;
@@ -972,10 +969,12 @@ form:invalid input[type='email'] {
 				color: #fe9013;
 				padding-top: 0px;
 				padding-right: 20px;
+				margin-top: 8px;
+				margin-bottom: -10px;
 			}
 
 			& p {
-				margin-bottom: 40px;
+				margin-bottom: 0px;
 				padding-right: 0px;
 			}
 		}
@@ -983,7 +982,8 @@ form:invalid input[type='email'] {
 		&__panda {
 			width: 580px;
 			padding-right: 30px;
-			padding-top: -20px;
+			margin-top: 0px;
+			padding-bottom: 0px;
 		}
 
 		&__scale {
@@ -1013,7 +1013,7 @@ form:invalid input[type='email'] {
 		font-size: 16px;
 		font-weight: 400;
 		color: #000000;
-		padding-bottom: 30px;
+		padding-bottom: 50px;
 	}
 
 	.scale-range {
@@ -1027,6 +1027,8 @@ form:invalid input[type='email'] {
 		padding: 10px;
 		margin: 10px;
 		z-index: -15;
+		margin-top:-25px;
+		
 	}
 
 	.inside-line {
@@ -1075,12 +1077,13 @@ form:invalid input[type='email'] {
 		padding-right: 60px;
 	}
 
-	.amount-5000 {
+	#invisible-input,
+	.invisible-input {
 		display: none;
 	}
 
-	#invisible-dot {
-		display: none;
+	.zindex {
+		margin-left: 0px;
 	}
 
 	// orange rounds
@@ -1091,6 +1094,7 @@ form:invalid input[type='email'] {
 		align-items: center;
 		width: 785px;
 		cursor: pointer;
+		
 	}
 
 	.marked {
@@ -1236,6 +1240,7 @@ form:invalid input[type='email'] {
 		line-height: 47px;
 		padding-top: 40px;
 		padding-bottom: 5px;
+		margin-bottom: -5px;
 	}
 
 	.donation-text p {
@@ -1245,6 +1250,7 @@ form:invalid input[type='email'] {
 		line-height: 22px;
 		padding-bottom: 20px;
 		padding-top: 30px;
+		margin-bottom: 10px;
 	}
 
 	.donation-text h2 {
@@ -1255,6 +1261,7 @@ form:invalid input[type='email'] {
 		padding-bottom: 20px;
 		padding-left: 0;
 		padding-top: 20px;
+		margin-bottom: -5px;
 	}
 
 	//scale
@@ -1279,12 +1286,14 @@ form:invalid input[type='email'] {
 		border: 1px solid #929699;
 		font-size: 16px;
 		font-weight: 400;
+		margin-top: 13px;
 	}
 
 	////
 	//
 	.donation-btn {
-		padding-bottom: 20px;
+		padding-bottom:30px;
+		
 	}
 	.donation-btn button {
 		width: 298px;
@@ -1304,8 +1313,12 @@ form:invalid input[type='email'] {
 		font-size: 16px;
 		font-weight: 400;
 		color: #333b41;
-		padding: 25px;
+		padding: 0px;
+		// padding-top: 5px;
+		// margin-top: 20px;
 		// line-height: 28px;
+		margin-bottom: 55px;
+	
 	}
 
 	// radio buttons monthly or once contribution
@@ -1328,6 +1341,9 @@ form:invalid input[type='email'] {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		margin-top: 5px;
+		margin-left: 10px;
+		margin-right: 50px;
 	}
 
 	.radio-buttons input[type='radio'] {
@@ -1366,6 +1382,7 @@ form:invalid input[type='email'] {
 	//
 
 	//footer
+	
 
 	.footer {
 		height: 443px;
@@ -1403,7 +1420,8 @@ form:invalid input[type='email'] {
 	}
 
 	.navfooter {
-		padding-bottom: 0px;
+		padding-bottom: 10px;
+		padding-left: 15px;
 		height: 320px;
 		& ul {
 			justify-content: space-between;
@@ -1429,26 +1447,47 @@ form:invalid input[type='email'] {
 	.form-label {
 		position: absolute;
 		left: 570px;
-		top: 35px;
+		top: 50px;
 	}
 
 	.input-email {
 		position: absolute;
 		right: 200px;
-		top: 80px;
+		top: 82px;
 	}
 
 	.input-button {
 		margin-left: 10px;
 		position: absolute;
 		right: 60px;
-		top: 80px;
+		top: 82px;
 	}
 }
 
 @media (max-width: 999px) {
+
+	#invisible-input2 {
+		display: none
+	}
+
+	#invisible-input3 {
+		display: none
+	}
+
+	.invisible-input2 {
+		display: none
+	}
+
+	.invisible-input3 {
+		display: none
+	}
+
 	.hamburger-menu i {
 		color: white;
+	}
+
+	.index-start3 {
+		margin-left: -20px;
 	}
 
 	.hamburger-menu {
@@ -1522,6 +1561,7 @@ form:invalid input[type='email'] {
 		&__img {
 			height: 335px;
 			padding-bottom: 50px;
+			z-index: -100;
 		}
 	}
 
@@ -1534,15 +1574,14 @@ form:invalid input[type='email'] {
 	.main-container {
 		margin-bottom: 18px;
 		width: 640px;
+		height: 1333px;
 	}
 
 	.sub-container {
-		padding-top: 10px;
+		padding-top: 0px;
 		width: 600px;
 		height: 918px;
-		padding-left: 20px;
-		padding-right: 20px;
-		margin-top: 25px;
+		margin-top: 0px;
 
 		&__title {
 			display: flex;
@@ -1838,7 +1877,7 @@ form:invalid input[type='email'] {
 
 	.donation-text p {
 		line-height: 22px;
-		padding: 20px;
+		padding: 21px;
 	}
 
 	.donation-text h2 {
@@ -1846,9 +1885,10 @@ form:invalid input[type='email'] {
 		font-size: 36px;
 		font-weight: 400;
 		padding: 30px;
-		padding-bottom: 10px;
+		padding-bottom: 0px;
 		padding-left: 20px;
-		padding-top: 10px;
+		padding-top: 20px;
+		margin-bottom: 0px;
 	}
 
 	//scale
@@ -1973,6 +2013,10 @@ form:invalid input[type='email'] {
 		padding-bottom: 30px;
 	}
 
+	.subscribtion {
+		height: 100px;
+	}
+
 	//logo
 
 	.logo-footer {
@@ -2009,6 +2053,7 @@ form:invalid input[type='email'] {
 
 	.footer-all {
 		display: flex;
+		height: 200px;
 	}
 
 	.fa-brands {
