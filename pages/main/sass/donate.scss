@@ -1027,8 +1027,7 @@ form:invalid input[type='email'] {
 		padding: 10px;
 		margin: 10px;
 		z-index: -15;
-		margin-top:-25px;
-		
+		margin-top: -25px;
 	}
 
 	.inside-line {
@@ -1094,7 +1093,6 @@ form:invalid input[type='email'] {
 		align-items: center;
 		width: 785px;
 		cursor: pointer;
-		
 	}
 
 	.marked {
@@ -1292,8 +1290,7 @@ form:invalid input[type='email'] {
 	////
 	//
 	.donation-btn {
-		padding-bottom:30px;
-		
+		padding-bottom: 30px;
 	}
 	.donation-btn button {
 		width: 298px;
@@ -1318,7 +1315,6 @@ form:invalid input[type='email'] {
 		// margin-top: 20px;
 		// line-height: 28px;
 		margin-bottom: 55px;
-	
 	}
 
 	// radio buttons monthly or once contribution
@@ -1382,7 +1378,6 @@ form:invalid input[type='email'] {
 	//
 
 	//footer
-	
 
 	.footer {
 		height: 443px;
@@ -1465,21 +1460,20 @@ form:invalid input[type='email'] {
 }
 
 @media (max-width: 999px) {
-
 	#invisible-input2 {
-		display: none
+		display: none;
 	}
 
 	#invisible-input3 {
-		display: none
+		display: none;
 	}
 
 	.invisible-input2 {
-		display: none
+		display: none;
 	}
 
 	.invisible-input3 {
-		display: none
+		display: none;
 	}
 
 	.hamburger-menu i {
@@ -1587,18 +1581,21 @@ form:invalid input[type='email'] {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+			margin-top: 10px;
+			padding-top: 0px;
 
 			& h2 {
 				font-size: 48px;
 				font-weight: 400;
 				color: #fe9013;
-				padding-top: 17px;
+				padding-top: 30px;
 				padding-right: 0px;
+				margin-bottom: 5px;
 			}
 
 			& p {
-				margin-bottom: 40px;
-				padding-left: 30px;
+				margin-bottom: 20px;
+				padding-left: 0px;
 				text-align: center;
 				padding-bottom: 16px;
 			}
@@ -1607,7 +1604,7 @@ form:invalid input[type='email'] {
 		&__panda {
 			width: 580px;
 			padding-right: 30px;
-			padding-top: -25px;
+			margin-top: -40px;
 		}
 
 		&__scale {
@@ -1615,7 +1612,8 @@ form:invalid input[type='email'] {
 			flex-direction: column;
 			align-items: center;
 			justify-content: space-around;
-			height: 280px;
+			height: 250px;
+			margin-top: 45px;
 		}
 	}
 
@@ -1625,8 +1623,9 @@ form:invalid input[type='email'] {
 		justify-content: center;
 		align-items: center;
 		z-index: 20;
-		padding-bottom: 35px;
+		padding-bottom: 20px;
 		padding-right: 5px;
+		margin-bottom: 20px;
 	}
 
 	.scale-title {
@@ -1831,13 +1830,14 @@ form:invalid input[type='email'] {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		margin-bottom: -30px;
 	}
 
 	.diet-header {
 		font-size: 72px;
 		font-weight: 500;
-		padding-top: 20px;
-		padding-left: 25px;
+		padding-top: 5px;
+		padding-left: 30px;
 	}
 
 	.diet :nth-of-type(2) {
@@ -1869,15 +1869,17 @@ form:invalid input[type='email'] {
 	.donation-text h1 {
 		font-size: 24px;
 		line-height: 24px;
-		padding-top: 40px;
+		padding-top: 35px;
 		padding-left: 20px;
-		padding-bottom: 10px;
-		margin-top: 25px;
+		padding-bottom: 0px;
+		margin-top: 20px;
+		margin-bottom: 5px;
 	}
 
 	.donation-text p {
 		line-height: 22px;
 		padding: 21px;
+		margin-bottom: 15px;
 	}
 
 	.donation-text h2 {
@@ -1887,8 +1889,9 @@ form:invalid input[type='email'] {
 		padding: 30px;
 		padding-bottom: 0px;
 		padding-left: 20px;
-		padding-top: 20px;
-		margin-bottom: 0px;
+		padding-top: 0px;
+		margin-top: 10px;
+		margin-bottom: 32px;
 	}
 
 	//scale
@@ -1903,22 +1906,16 @@ form:invalid input[type='email'] {
 	.scale-input {
 		background-color: rgba(255, 255, 255, 0.52);
 		border: none;
-		width: 270px;
-		height: 55px;
-		border-radius: 2px;
-		background-image: url('../assets/img/Vector-scale.svg');
-		background-repeat: no-repeat;
-		background-position: 90% 50%;
+		width: 180px;
+		height: 42px;
+		margin-top: 0px;
 		padding-left: 10px;
-		border: 1px solid #929699;
-		font-size: 16px;
-		font-weight: 400;
 	}
 
 	////
 	//
 	.donation-btn {
-		padding-bottom: 20px;
+		padding-bottom: 0px;
 	}
 	.donation-btn button {
 		width: 298px;
@@ -1940,6 +1937,7 @@ form:invalid input[type='email'] {
 		color: #333b41;
 		padding: 25px;
 		// line-height: 28px;
+		margin-bottom: 70px;
 	}
 
 	// radio buttons monthly or once contribution
@@ -2009,7 +2007,7 @@ form:invalid input[type='email'] {
 		align-items: center;
 		width: 100%;
 		padding-top: 50px;
-		margin-top: 0px;
+		margin-top: 15px;
 		padding-bottom: 30px;
 	}
 
@@ -2021,7 +2019,615 @@ form:invalid input[type='email'] {
 
 	.logo-footer {
 		position: absolute;
+		top: 63px;
+		left: 18px;
+		width: 82px;
+		height: 52px;
+		border-radius: 2px;
+	}
+
+	.nav-title-footer {
+		position: relative;
+		width: 85px;
+		height: 55px;
+		border: 1px solid white;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+	.nav-title p {
+		display: inline-block;
+		position: absolute;
+		font-weight: 300;
+		font-size: 20px;
+		color: white;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		border: white 2px solid;
+		border-radius: 2px;
+	}
+
+	//footer
+
+	.footer-all {
+		display: flex;
+		height: 200px;
+	}
+
+	.fa-brands {
+		color: rgba(196, 196, 196, 0.5);
+	}
+
+	.icons-footer {
+		margin-top: 35px;
+		position: absolute;
+		right: 10px;
+		top: -25px;
+	}
+
+	.icons-footer span {
+		display: none;
+	}
+
+	.icon-footer {
+		padding: 10px;
+		margin-top: 5px;
+	}
+
+	.icon-footer a {
+		color: white;
+		text-decoration: none;
+	}
+
+	.button-footer {
+		position: absolute;
+		top: 68px;
+		left: 20px;
+	}
+
+	.navfooter {
+		justify-content: center;
+		margin-left: 0px;
+		padding-bottom: 5px;
+		height: 270px;
+		width: 640px;
+		position: absolute;
 		top: 5px;
+		left: -20px;
+
+		& ul {
+			width: 100%;
+			align-items: flex-end;
+			justify-content: flex-start;
+			height: 100%;
+			padding-left: 0px;
+			padding-right: 30px;
+			list-style: none;
+		}
+
+		& a {
+			margin-left: 30px;
+		}
+	}
+
+	.form {
+		display: none;
+	}
+
+	.footer-designed {
+		position: absolute;
+		bottom: -10px;
+		right: 10px;
+		width: 250px;
+		margin-bottom: 15px;
+	}
+
+	.footer-designed p {
+		padding-bottom: 10px;
+		width: 250px;
+	}
+}
+
+@media (max-width: 640px) {
+	.wrapper {
+		width: 320px;
+	}
+
+	.hamburger-menu {
+		margin-right: 10px;
+	}
+
+	.nav {
+		height: 34px;
+	}
+
+	.nav-main {
+		width: 320px;
+	}
+
+	.logo-menu {
+		margin-left: -20px;
+	}
+
+	.nav-title {
+		margin-left: -15px;
+	}
+
+	header {
+		height: 186px;
+	}
+
+	.header {
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+		margin-top: 34px;
+		height: 186px;
+
+		&__img {
+			height: 186px;
+		}
+	}
+
+	//main section
+	.wrapper {
+		margin: 0 auto;
+		max-width: 320px;
+	}
+
+	.main-container {
+		margin-bottom: -5px;
+		width: 320px;
+		height: 1145px;
+		margin-top: 40px;
+	}
+
+	.sub-container {
+		padding: 0;
+		width: 301px;
+		height: 591px;
+		margin: 0;
+		padding-top: -20px;
+
+		&__title {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 10px;
+			margin-bottom: 0;
+			padding-top: 0px;
+
+			& h2 {
+				font-size: 24px;
+				font-weight: 400;
+				color: #fe9013;
+				padding-top: 0px;
+				padding-right: 0px;
+				margin-bottom: -10px;
+			}
+
+			& p {
+				padding-left: 0px;
+				text-align: center;
+				padding-bottom: 0px;
+				font-size: 16px;
+				padding: 0;
+				margin: 0;
+				margin-bottom: 20px;
+			}
+		}
+
+		&__panda {
+			width: 160px;
+			padding-right: 0px;
+			margin-top: 0px;
+			height: 138px;
+		}
+
+		&__scale {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-around;
+			height: 250px;
+			margin-top: 0px;
+			margin-bottom: 35px;
+		}
+	}
+
+	.donation-text h1 {
+		font-size: 24px;
+		line-height: 30px;
+		padding: 0;
+		margin: 0;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.donation-text p {
+		line-height: 22px;
+		padding: 0;
+		margin: 0;
+		font-size: 16px;
+		margin-top: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.donation-text h2 {
+		color: #fe9013;
+		font-size: 24px;
+		font-weight: 400;
+		padding: 0px;
+		margin: 0;
+		margin-bottom: 30px;
+		margin-top: 30px;
+		padding-left: 20px;
+	}
+
+	.donation-text {
+		width: 320px;
+	}
+
+	.range {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		z-index: 20;
+		padding-bottom: 10px;
+		padding-right: 5px;
+		margin-bottom: 20px;
+		width: 320px;
+	}
+
+	.scale-title {
+		width: 300px;
+	}
+
+	.scale-title p {
+		padding-bottom: 0px;
+	}
+
+	.scale-range {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 300px;
+		background: #404950;
+		border-radius: 2px;
+		height: 20px;
+		padding: 0px;
+		margin: 0px;
+		z-index: -15;
+	}
+
+	.inside-line {
+		background-image: url('../assets/img/line.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 262px;
+		height: 2px;
+		position: absolute;
+		z-index: 0;
+	}
+
+	#invisible-dot2 {
+		display: none;
+	}
+
+	#amount-1000 {
+		display: none;
+	}
+
+	.scale-amount {
+		width: 285px;
+		padding: 10px 0 0 0;
+		color: #333b41;
+		font-size: 13px;
+		font-weight: 500;
+		padding-top: 5px;
+	}
+
+	.scale-amount label {
+		cursor: pointer;
+	}
+
+	.scale-amount :nth-child(2) {
+		padding-right: 30px;
+		margin-left: -13px;
+	}
+	.scale-amount :nth-child(3) {
+		padding-right: 23px;
+	}
+	.scale-amount :nth-child(4) {
+		padding-right: 0px;
+	}
+	.scale-amount :nth-child(5) {
+		padding-right: 10px;
+	}
+	.scale-amount :nth-child(6) {
+		padding-right: 15px;
+	}
+	.scale-amount :nth-child(7) {
+		padding-right: 20px;
+	}
+
+	#amount-2000 {
+		display: none;
+	}
+
+	#invisible-dot {
+		display: none;
+	}
+
+	// orange rounds
+
+	.scale-inputs {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 262px;
+		cursor: pointer;
+	}
+
+	.marked {
+		color: #fe9013;
+		margin-left: -25px;
+	}
+
+	.scale-inputs input {
+		background-color: #ffee2e;
+		z-index: 10;
+		appearance: none;
+		width: 5px;
+		height: 5px;
+		border-radius: 50%;
+		cursor: pointer;
+		display: flex;
+	}
+
+	.scale-inputs input::before {
+		content: '';
+		width: 5px;
+		height: 5px;
+		border-radius: 50%;
+		transform: scale(0);
+		transition: 120ms transform ease-in-out;
+		box-shadow: inset 1em 1em orange;
+	}
+
+	.scale-inputs input:checked::before {
+		transform: scale(1);
+	}
+
+	.zindex {
+		position: relative;
+		// border: 2px solid #fe9013;
+		border-radius: 50%;
+		width: 20px;
+		height: 20px;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		z-index: 20;
+	}
+
+	.round-inactive {
+		position: absolute;
+		top: 50%;
+		right: 50%;
+		transform: translate(50%, -50%);
+		// border: 2px solid #fe9013;
+		border-radius: 50%;
+		width: 11.5px;
+		height: 11.5px;
+		z-index: 20;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+	}
+
+	.zindex-active {
+		border: 1px solid #fe9013;
+	}
+
+	.round-active {
+		border: 1px solid #fe9013;
+	}
+
+	.index-start {
+		display: none;
+	}
+
+	.index-start2 {
+		display: none;
+	}
+
+	.index-start3 {
+		margin-left: -10px;
+	}
+
+	.index-end {
+		margin-right: -10px;
+	}
+
+	/////
+
+	.diet {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: -30px;
+		width: 100px;
+	}
+
+	.diet-header {
+		font-size: 40px;
+		font-weight: 500;
+		padding-top: 5px;
+		padding-left: 30px;
+	}
+	
+
+	.diet :nth-of-type(2) {
+		font-size: 9px;
+		font-weight: 400;
+		padding: 5px;
+	}
+
+	.vector-ex {
+		padding: 20px;
+		width: 10px;
+	}
+
+	.vector-ex img {
+		width: 8px;
+		height: 8px;
+	}
+
+	.panda-svg {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.panda-svg img {
+		padding-bottom: 0px;
+		padding-left: 0px;
+		margin-left: 15px;
+		margin-bottom: 5px;
+		width: 162px;
+		height: 138px;
+	}
+
+	//scale
+	.scale-div {
+		color: #929699;
+		border-radius: 2px;
+		display: flex;
+		align-items: center;
+		padding-bottom: 20px;
+	}
+
+	.scale-input {
+		background-color: rgba(255, 255, 255, 0.52);
+		border: none;
+		width: 180px;
+		height: 42px;
+		margin-top: 0px;
+		padding-left: 10px;
+		margin: 0;
+	}
+
+	////
+	//
+	.donation-btn {
+		padding-bottom: 0px;
+		margin-top: 0px;
+		margin-top: -20px;
+	}
+	.donation-btn button {
+		width: 298px;
+		height: 54px;
+		font-weight: 500;
+		font-size: 16px;
+		background: $orange_fresh;
+		border-radius: 25px;
+		color: white;
+		line-height: 54px;
+		text-align: center;
+		text-transform: uppercase;
+		border: none;
+	}
+
+	.scale-txt {
+		font-size: 16px;
+		font-weight: 400;
+		color: #333b41;
+		padding: 0px;
+		// line-height: 28px;
+		margin-top: 20px;
+		margin-bottom: -20px;
+	}
+
+	// radio buttons monthly or once contribution
+
+	.radio-buttons {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 180px;
+		padding-bottom: 0px;
+		margin: 0;
+		margin-right: 60px;
+		padding: 0;
+		margin-bottom: 30px;
+		margin-top: -10px;
+	}
+
+	.radio-buttons label {
+		margin-left: 5px;
+		cursor: pointer;
+	}
+
+	.monthly-contribution {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.radio-buttons input[type='radio'] {
+		appearance: none;
+		background-color: #fff;
+		margin: 0;
+		width: 15px;
+		height: 15px;
+		border: 1px solid orange;
+		border-radius: 50%;
+		background: rgba(255, 255, 255, 0.52);
+		transform: translateY(-0.075em);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+	}
+
+	.radio-buttons input[type='radio']::before {
+		content: '';
+		width: 14px;
+		height: 14px;
+		border-radius: 50%;
+		transform: scale(0);
+		transition: 120ms transform ease-in-out;
+		box-shadow: inset 21px 21px #4b9200;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.radio-buttons input[type='radio']:checked::before {
+		transform: scale(1);
+	}
+
+	//footer
+
+	.footer {
+		background-color: #111115;
+		height: 334px;
+		padding-top: 40px;
+		margin-top: 0px;
+		padding-bottom: 30px;
+	}
+
+	//logo
+
+	.logo-footer {
+		position: absolute;
+		bottom: 0px;
 		left: 25px;
 		width: 82px;
 		height: 52px;
@@ -2053,18 +2659,15 @@ form:invalid input[type='email'] {
 
 	.footer-all {
 		display: flex;
-		height: 200px;
-	}
-
-	.fa-brands {
-		color: rgba(196, 196, 196, 0.5);
 	}
 
 	.icons-footer {
 		margin-top: 28px;
 		position: absolute;
-		right: 10px;
-		top: -25px;
+		right: 50px;
+		top: 40px;
+		display: flex;
+		flex-direction: row;
 	}
 
 	.icons-footer span {
@@ -2073,25 +2676,20 @@ form:invalid input[type='email'] {
 
 	.icon-footer {
 		padding: 10px;
-	}
-
-	.icon-footer a {
-		color: white;
-		text-decoration: none;
+		margin-left: 15px;
 	}
 
 	.button-footer {
-		position: absolute;
-		top: 20px;
-		left: 20px;
+		top: 100px;
+		left: 10px;
 	}
 
 	.navfooter {
 		justify-content: center;
 		margin-left: 0px;
-		padding-bottom: 5px;
-		height: 270px;
-		width: 640px;
+		padding-bottom: 0px;
+		height: 315px;
+		width: 320px;
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -2099,15 +2697,15 @@ form:invalid input[type='email'] {
 		& ul {
 			width: 100%;
 			align-items: flex-end;
-			justify-content: flex-start;
+			justify-content: space-between;
 			height: 100%;
 			padding-left: 0px;
-			padding-right: 30px;
+			padding-right: 15px;
 			list-style: none;
 		}
 
 		& a {
-			margin-left: 30px;
+			margin-left: 10px;
 		}
 	}
 
@@ -2117,9 +2715,9 @@ form:invalid input[type='email'] {
 
 	.footer-designed {
 		position: absolute;
-		bottom: -10px;
-		right: 10px;
-		width: 250px;
+		bottom: 50px;
+		left: 110px;
+		width: 220px;
 	}
 
 	.footer-designed p {
