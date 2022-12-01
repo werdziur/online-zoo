@@ -2389,11 +2389,14 @@ form:invalid input[type=email] {
   .footer-designed {
     position: absolute;
     bottom: 50px;
-    left: 110px;
+    left: 100px;
     width: 220px;
   }
   .footer-designed p {
     padding-bottom: 10px;
-    width: 250px;
+    width: 240px;
+  }
+  .footer-designed a {
+    width: 240px;
   }
 }/*# sourceMappingURL=donate.css.map */
