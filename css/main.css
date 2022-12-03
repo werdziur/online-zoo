@@ -1308,10 +1308,12 @@ form:invalid input[type=email] {
     height: 870px;
     margin-top: 235px;
     margin-bottom: 70px;
+    padding-left: 0;
+    padding-right: 0;
   }
   .card-feed {
     height: 800px;
-    width: 115%;
+    width: 94vw;
     padding: 0;
     padding-bottom: 75px;
   }
