@@ -16,6 +16,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.shade {
+  display: none;
 }
 
 .wrapper {
@@ -814,7 +819,7 @@ header {
 }
 
 .progress {
-  width: 20%;
+  width: 12.5%;
 }
 
 .footer {
@@ -1891,6 +1896,23 @@ form:invalid input[type=email] {
     padding-top: 0px;
     padding-bottom: 30px;
     width: 640px;
+    position: relative;
+  }
+  .unshrinked {
+    height: 391px;
+    width: 294px;
+    position: absolute;
+    top: 0;
+    left: 27%;
+    z-index: 200000000000;
+  }
+  .shaded-body {
+    background-color: rgba(0, 0, 0, 0.61);
+    z-index: 2000000000;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
   }
   .block {
     width: 600px;
@@ -2212,7 +2234,9 @@ form:invalid input[type=email] {
     margin-top: 0px;
   }
   .penguin,
-.cheetah, .alligators, .giraffe {
+.cheetah,
+.alligators,
+.giraffe {
     display: none;
   }
   .circle {
@@ -2354,6 +2378,22 @@ form:invalid input[type=email] {
     padding-bottom: 0px;
     width: 320px;
     height: 500px;
+    position: relative;
+  }
+  .unshrinked {
+    height: 391px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    z-index: 20000000000;
+  }
+  .shaded-body {
+    background-color: rgba(0, 0, 0, 0.61);
+    z-index: 2000000000;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
   }
   .block {
     width: 299px;
