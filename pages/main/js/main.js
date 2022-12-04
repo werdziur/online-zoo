@@ -20,3 +20,20 @@ function hideMenu() {
 
 burgerOpacity.addEventListener('click', hideMenu)
 closeBurger.addEventListener('click', hideMenu)
+
+
+//slider pets
+
+const arrowOne = document.querySelector('.arrow1')
+const arrowTwo = document.querySelector('.arrow2')
+const mainSlider = document.getElementById('slider-main')
+const cards = mainSlider.getElementsByClassName('card')
+
+function slider() {
+    mainSlider.append(cards[0], cards[1], cards[2], cards[3], cards[4])
+}
+
+
+
+arrowOne.addEventListener('click', slider)
+arrowTwo.addEventListener('click', slider)

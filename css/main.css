@@ -284,6 +284,7 @@ header {
   padding-top: 40px;
   padding-bottom: 20px;
   margin-top: 85px;
+  height: 1190px;
 }
 
 .two::before {
@@ -346,17 +347,18 @@ header {
   align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  height: 1500px;
+  overflow: hidden;
 }
 
 .card {
   border: 1px solid #F9804B;
   border-radius: 5px;
   overflow: hidden;
-  margin: 10px;
-  margin-left: 18px;
   width: 368px;
   height: 426px;
   transition: 0.4s;
+  margin: 8px;
 }
 
 .hover {
@@ -504,20 +506,9 @@ header {
   margin-left: 10px;
 }
 
-.pandas {
-  margin-left: 0;
-}
-
-.sloth {
-  margin-left: 0;
-}
-
-.gorilla {
-  margin-right: 0;
-}
-
-.penguin {
-  margin-right: 0;
+.image img {
+  width: 366px;
+  height: 366px;
 }
 
 .three {
@@ -720,6 +711,7 @@ header {
   background-color: #F1F3F2;
   border: 2px solid #FEBDAB;
   border-radius: 20px;
+  overflow: scroll;
 }
 
 .block-img {
@@ -1182,17 +1174,17 @@ form:invalid input[type=email] {
     padding-top: 0px;
   }
   .two {
-    height: 800px;
-    padding-top: 40px;
+    padding-top: 30px;
     padding-bottom: 20px;
-    margin-top: 95px;
+    margin-top: -55px;
     width: 100%;
+    height: 1100px;
   }
   .two::before {
     width: 300px;
     height: 350px;
     padding: 0;
-    bottom: -385px;
+    bottom: -225px;
     left: 0px;
     background-image: url("../assets/img/palm_foto small.png");
   }
@@ -1201,7 +1193,7 @@ form:invalid input[type=email] {
     height: 250px;
     padding: 0;
     right: 0px;
-    bottom: -308px;
+    bottom: -155px;
     background-image: url("../assets/img/strelitzia 1 small.png");
     background-position: top right;
   }
@@ -1219,35 +1211,13 @@ form:invalid input[type=email] {
     width: 1000px;
     padding: 10px;
     margin-left: 0px;
+    height: 1100px;
   }
   .card {
     margin: 10px;
-    margin-right: 10px;
-    margin-left: 0px;
     width: 294px;
     height: 354px;
-    margin-top: 70px;
-  }
-  .gorilla {
-    margin-left: 15px;
-  }
-  .eagle {
-    margin-left: 15px;
-  }
-  .pandas {
-    margin-left: 15px;
-  }
-  .cheetah {
-    margin-left: 15px;
-    margin-top: 85px;
-  }
-  .sloth {
-    margin-left: 15px;
-    margin-top: 85px;
-  }
-  .penguin {
-    margin-left: 15px;
-    margin-top: 85px;
+    margin-top: 75px;
   }
   .hover {
     width: 294px;
@@ -1277,10 +1247,12 @@ form:invalid input[type=email] {
     cursor: pointer;
   }
   .arrow1 {
-    right: 350px;
+    right: 352px;
+    top: 43.5%;
   }
   .arrow2 {
     left: 355px;
+    top: 43.5%;
   }
   .image {
     width: 294px;
@@ -1306,7 +1278,7 @@ form:invalid input[type=email] {
   }
   .three {
     height: 870px;
-    margin-top: 235px;
+    margin-top: 82px;
     margin-bottom: 70px;
     padding-left: 0;
     padding-right: 0;
@@ -1621,7 +1593,7 @@ form:invalid input[type=email] {
     top: 245px;
   }
   .main {
-    margin-top: 34px;
+    margin-top: -80px;
     padding-top: 0px;
     padding-bottom: 40px;
   }
@@ -1642,17 +1614,19 @@ form:invalid input[type=email] {
     padding: 0px;
     width: 100%;
     margin: 0;
+    margin-top: 0px;
+    margin-bottom: -20px;
   }
   .one__photo {
     display: none;
   }
   .one__text {
-    padding-bottom: 530px;
+    padding-bottom: 200px;
     padding-right: 0px;
     margin: 0;
-    height: 350px;
+    height: 300px;
     width: 500px;
-    margin-right: 90px;
+    margin-right: 95px;
   }
   .one__text h2 {
     line-height: 100%;
@@ -1676,46 +1650,45 @@ form:invalid input[type=email] {
     padding-top: 0px;
   }
   .two {
-    height: 800px;
+    height: 1150px;
     padding-top: 63px;
     padding-bottom: 30px;
-    margin-top: 18px;
+    margin-top: -10px;
     width: 100%;
+    margin-left: -10px;
   }
   .two::before {
     background-image: url("../assets/img/palm_foto tablet.png");
-    bottom: -300px;
+    bottom: -110px;
     left: 0px;
   }
   .two::after {
-    bottom: -272px;
+    bottom: -90px;
     background-image: url("../assets/img/strelitzia 1 tablet.png");
     right: 0px;
     background-position: top right;
   }
   .button-two button {
     margin-top: 35px;
-    margin-bottom: 80px;
+    margin-bottom: 105px;
   }
   .cards {
-    margin-top: 0px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: stretch;
     padding-top: 0px;
     padding-bottom: 0px;
     width: 640px;
     padding: 10px;
-    margin-left: 0px;
+    margin: 0;
+    height: 900px;
   }
   .card {
-    margin: 10px;
-    margin-right: 10px;
-    margin-left: 0px;
+    margin: 15px;
     width: 280px;
     height: 330px;
-    margin-top: 70px;
+    margin-top: 75px;
   }
   .txt p {
     font-size: 11.5px;
@@ -1733,26 +1706,6 @@ form:invalid input[type=email] {
     height: 26px;
     margin-top: 8px;
     margin-left: 10px;
-  }
-  .gorilla {
-    margin-left: 8px;
-    margin-top: 80px;
-  }
-  .eagle {
-    margin-left: 25px;
-  }
-  .pandas {
-    margin-left: 10px;
-  }
-  .cheetah {
-    display: none;
-  }
-  .sloth {
-    margin-left: 25px;
-    margin-top: 85px;
-  }
-  .penguin {
-    display: none;
   }
   .hover {
     width: 294px;
@@ -1781,10 +1734,12 @@ form:invalid input[type=email] {
     cursor: pointer;
   }
   .arrow1 {
-    right: 245px;
+    right: 249px;
+    top: 42.5%;
   }
   .arrow2 {
-    left: 245px;
+    left: 241px;
+    top: 42.5%;
   }
   .image {
     width: 285px;
@@ -1807,7 +1762,7 @@ form:invalid input[type=email] {
   }
   .three {
     height: 781px;
-    margin-top: 150px;
+    margin-top: -35px;
     margin-bottom: 70px;
   }
   .card-feed {
@@ -2165,17 +2120,20 @@ form:invalid input[type=email] {
     padding: 0px;
     width: 100%;
     margin-top: 30px;
+    margin-bottom: -10px;
   }
   .one__photo {
     display: none;
   }
   .one__text {
-    padding-bottom: 530px;
+    padding-bottom: 30px;
     padding-right: 0px;
     padding-left: 10px;
     margin: 0;
-    height: 200px;
-    width: 340px;
+    height: 150px;
+    width: 320px;
+    margin-bottom: 50px;
+    margin-top: -325px;
   }
   .one__text h2 {
     padding: 0;
@@ -2198,10 +2156,10 @@ form:invalid input[type=email] {
     padding-top: 8px;
   }
   .two {
-    height: 1530px;
+    height: 1520px;
     padding-top: 0px;
     padding-bottom: 40px;
-    margin-top: 0px;
+    margin-top: 20px;
     margin-bottom: 0;
   }
   .two::before {
@@ -2239,21 +2197,22 @@ form:invalid input[type=email] {
   }
   .gorilla {
     margin: 0;
-    margin-top: 13px;
+    margin-top: -10px;
   }
   .eagle {
     margin: 0;
-    margin-top: 13px;
+    margin-top: 0px;
   }
   .pandas {
     margin: 0;
+    margin-top: 0px;
   }
   .sloth {
     margin: 0;
-    margin-top: 20px;
+    margin-top: 0px;
   }
   .penguin,
-.cheetah {
+.cheetah, .alligators, .giraffe {
     display: none;
   }
   .circle {
