@@ -16,6 +16,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.shade {
+  display: none;
 }
 
 .wrapper {
@@ -284,6 +289,7 @@ header {
   padding-top: 40px;
   padding-bottom: 20px;
   margin-top: 85px;
+  height: 1190px;
 }
 
 .two::before {
@@ -346,17 +352,18 @@ header {
   align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  height: 1500px;
+  overflow: hidden;
 }
 
 .card {
   border: 1px solid #F9804B;
   border-radius: 5px;
   overflow: hidden;
-  margin: 10px;
-  margin-left: 18px;
   width: 368px;
   height: 426px;
   transition: 0.4s;
+  margin: 8px;
 }
 
 .hover {
@@ -504,20 +511,9 @@ header {
   margin-left: 10px;
 }
 
-.pandas {
-  margin-left: 0;
-}
-
-.sloth {
-  margin-left: 0;
-}
-
-.gorilla {
-  margin-right: 0;
-}
-
-.penguin {
-  margin-right: 0;
+.image img {
+  width: 366px;
+  height: 366px;
 }
 
 .three {
@@ -720,6 +716,11 @@ header {
   background-color: #F1F3F2;
   border: 2px solid #FEBDAB;
   border-radius: 20px;
+  overflow: hidden;
+}
+
+.cross-sign {
+  display: none;
 }
 
 .block-img {
@@ -796,33 +797,104 @@ header {
   background: #4b9200;
 }
 
-.bar {
-  display: block;
-  background-color: rgb(192, 192, 192);
-  width: 38%;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  border: 1px solid #FEBDAB;
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 350px;
 }
 
-.bar:hover {
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 12.8px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: orange;
+  border-radius: 25px;
+  border: 0px solid #000101;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 39px;
+  border-radius: 7px;
+  background: #65001c;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -3.6px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: orange;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 12.8px;
+  cursor: pointer;
+  animation: 0.2s;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: orange;
+  border-radius: 25px;
+  border: 0px solid #000101;
+}
+
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 39px;
+  border-radius: 7px;
+  background: #65001c;
   cursor: pointer;
 }
 
-.line {
-  background-color: #fe9013;
-  color: white;
-  padding: 0.8%;
-  text-align: right;
-  border-radius: 15px;
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 12.8px;
+  cursor: pointer;
+  animation: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  border-width: 39px 0;
+  color: transparent;
 }
 
-.line:active {
-  background-color: #4b9200;
+input[type=range]::-ms-fill-lower {
+  background: orange;
+  border: 0px solid #000101;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
 }
 
-.progress {
-  width: 20%;
+input[type=range]::-ms-fill-upper {
+  background: orange;
+  border: 0px solid #000101;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+
+input[type=range]::-ms-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 39px;
+  border-radius: 7px;
+  background: #65001c;
+  cursor: pointer;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+  background: orange;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+  background: orange;
 }
 
 .footer {
@@ -1078,6 +1150,23 @@ form:invalid input[type=email] {
   color: #000000;
 }
 
+@media (min-width: 1600px) {
+  .four {
+    height: 800px;
+    margin-top: -20px;
+    margin-bottom: 0;
+  }
+  .blocks {
+    overflow-x: hidden;
+    height: 440px;
+  }
+  .block {
+    margin-left: 20px;
+  }
+  .footer::after {
+    top: 4540px;
+  }
+}
 @media (max-width: 1599px) {
   .hamburger-menu {
     display: none;
@@ -1182,17 +1271,17 @@ form:invalid input[type=email] {
     padding-top: 0px;
   }
   .two {
-    height: 800px;
-    padding-top: 40px;
+    padding-top: 30px;
     padding-bottom: 20px;
-    margin-top: 95px;
+    margin-top: -55px;
     width: 100%;
+    height: 1100px;
   }
   .two::before {
     width: 300px;
     height: 350px;
     padding: 0;
-    bottom: -385px;
+    bottom: -225px;
     left: 0px;
     background-image: url("../assets/img/palm_foto small.png");
   }
@@ -1201,7 +1290,7 @@ form:invalid input[type=email] {
     height: 250px;
     padding: 0;
     right: 0px;
-    bottom: -308px;
+    bottom: -155px;
     background-image: url("../assets/img/strelitzia 1 small.png");
     background-position: top right;
   }
@@ -1219,35 +1308,13 @@ form:invalid input[type=email] {
     width: 1000px;
     padding: 10px;
     margin-left: 0px;
+    height: 1100px;
   }
   .card {
     margin: 10px;
-    margin-right: 10px;
-    margin-left: 0px;
     width: 294px;
     height: 354px;
-    margin-top: 70px;
-  }
-  .gorilla {
-    margin-left: 15px;
-  }
-  .eagle {
-    margin-left: 15px;
-  }
-  .pandas {
-    margin-left: 15px;
-  }
-  .cheetah {
-    margin-left: 15px;
-    margin-top: 85px;
-  }
-  .sloth {
-    margin-left: 15px;
-    margin-top: 85px;
-  }
-  .penguin {
-    margin-left: 15px;
-    margin-top: 85px;
+    margin-top: 75px;
   }
   .hover {
     width: 294px;
@@ -1277,10 +1344,12 @@ form:invalid input[type=email] {
     cursor: pointer;
   }
   .arrow1 {
-    right: 350px;
+    right: 352px;
+    top: 43.5%;
   }
   .arrow2 {
     left: 355px;
+    top: 43.5%;
   }
   .image {
     width: 294px;
@@ -1306,7 +1375,7 @@ form:invalid input[type=email] {
   }
   .three {
     height: 870px;
-    margin-top: 235px;
+    margin-top: 82px;
     margin-bottom: 70px;
     padding-left: 0;
     padding-right: 0;
@@ -1384,6 +1453,9 @@ form:invalid input[type=email] {
     margin-bottom: 0px;
     margin-right: 12px;
     margin-left: 15px;
+  }
+  .cross-sign {
+    display: none;
   }
   .block-heading {
     padding-bottom: 0px;
@@ -1621,7 +1693,7 @@ form:invalid input[type=email] {
     top: 245px;
   }
   .main {
-    margin-top: 34px;
+    margin-top: -80px;
     padding-top: 0px;
     padding-bottom: 40px;
   }
@@ -1642,17 +1714,19 @@ form:invalid input[type=email] {
     padding: 0px;
     width: 100%;
     margin: 0;
+    margin-top: 0px;
+    margin-bottom: -20px;
   }
   .one__photo {
     display: none;
   }
   .one__text {
-    padding-bottom: 530px;
+    padding-bottom: 200px;
     padding-right: 0px;
     margin: 0;
-    height: 350px;
+    height: 300px;
     width: 500px;
-    margin-right: 90px;
+    margin-right: 95px;
   }
   .one__text h2 {
     line-height: 100%;
@@ -1676,46 +1750,45 @@ form:invalid input[type=email] {
     padding-top: 0px;
   }
   .two {
-    height: 800px;
+    height: 1150px;
     padding-top: 63px;
     padding-bottom: 30px;
-    margin-top: 18px;
+    margin-top: -10px;
     width: 100%;
+    margin-left: -10px;
   }
   .two::before {
     background-image: url("../assets/img/palm_foto tablet.png");
-    bottom: -300px;
+    bottom: -110px;
     left: 0px;
   }
   .two::after {
-    bottom: -272px;
+    bottom: -90px;
     background-image: url("../assets/img/strelitzia 1 tablet.png");
     right: 0px;
     background-position: top right;
   }
   .button-two button {
     margin-top: 35px;
-    margin-bottom: 80px;
+    margin-bottom: 105px;
   }
   .cards {
-    margin-top: 0px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: stretch;
     padding-top: 0px;
     padding-bottom: 0px;
     width: 640px;
     padding: 10px;
-    margin-left: 0px;
+    margin: 0;
+    height: 900px;
   }
   .card {
-    margin: 10px;
-    margin-right: 10px;
-    margin-left: 0px;
+    margin: 15px;
     width: 280px;
     height: 330px;
-    margin-top: 70px;
+    margin-top: 75px;
   }
   .txt p {
     font-size: 11.5px;
@@ -1733,26 +1806,6 @@ form:invalid input[type=email] {
     height: 26px;
     margin-top: 8px;
     margin-left: 10px;
-  }
-  .gorilla {
-    margin-left: 8px;
-    margin-top: 80px;
-  }
-  .eagle {
-    margin-left: 25px;
-  }
-  .pandas {
-    margin-left: 10px;
-  }
-  .cheetah {
-    display: none;
-  }
-  .sloth {
-    margin-left: 25px;
-    margin-top: 85px;
-  }
-  .penguin {
-    display: none;
   }
   .hover {
     width: 294px;
@@ -1781,10 +1834,12 @@ form:invalid input[type=email] {
     cursor: pointer;
   }
   .arrow1 {
-    right: 245px;
+    right: 249px;
+    top: 42.5%;
   }
   .arrow2 {
-    left: 245px;
+    left: 241px;
+    top: 42.5%;
   }
   .image {
     width: 285px;
@@ -1807,7 +1862,7 @@ form:invalid input[type=email] {
   }
   .three {
     height: 781px;
-    margin-top: 150px;
+    margin-top: -35px;
     margin-bottom: 70px;
   }
   .card-feed {
@@ -1936,11 +1991,42 @@ form:invalid input[type=email] {
     padding-top: 0px;
     padding-bottom: 30px;
     width: 640px;
+    position: relative;
+  }
+  .unshrinked {
+    height: 391px;
+    width: 294px;
+    position: absolute;
+    top: 0;
+    left: 27%;
+    z-index: 200000000000;
+  }
+  .shaded-body {
+    background-color: rgba(0, 0, 0, 0.61);
+    z-index: 2000000000;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+  }
+  .cross-sign-active {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    color: orange;
+  }
+  .cross-sign-active:hover {
+    color: rgb(122, 85, 16);
+  }
+  .cross-sign {
+    display: none;
   }
   .block {
     width: 600px;
     height: 109px;
     margin: 0;
+    cursor: pointer;
   }
   .block-img {
     margin-left: 10px;
@@ -1997,6 +2083,13 @@ form:invalid input[type=email] {
     line-height: 36px;
     margin-bottom: 10px;
     padding-top: 10px;
+  }
+  #testimonial7,
+#testimonial6,
+#testimonial5,
+#testimonial4,
+#last-block {
+    display: none;
   }
   .bar {
     display: none;
@@ -2165,17 +2258,20 @@ form:invalid input[type=email] {
     padding: 0px;
     width: 100%;
     margin-top: 30px;
+    margin-bottom: -10px;
   }
   .one__photo {
     display: none;
   }
   .one__text {
-    padding-bottom: 530px;
+    padding-bottom: 30px;
     padding-right: 0px;
     padding-left: 10px;
     margin: 0;
-    height: 200px;
-    width: 340px;
+    height: 150px;
+    width: 320px;
+    margin-bottom: 50px;
+    margin-top: -325px;
   }
   .one__text h2 {
     padding: 0;
@@ -2198,10 +2294,10 @@ form:invalid input[type=email] {
     padding-top: 8px;
   }
   .two {
-    height: 1530px;
+    height: 1520px;
     padding-top: 0px;
     padding-bottom: 40px;
-    margin-top: 0px;
+    margin-top: 20px;
     margin-bottom: 0;
   }
   .two::before {
@@ -2239,21 +2335,24 @@ form:invalid input[type=email] {
   }
   .gorilla {
     margin: 0;
-    margin-top: 13px;
+    margin-top: -10px;
   }
   .eagle {
     margin: 0;
-    margin-top: 13px;
+    margin-top: 0px;
   }
   .pandas {
     margin: 0;
+    margin-top: 0px;
   }
   .sloth {
     margin: 0;
-    margin-top: 20px;
+    margin-top: 0px;
   }
   .penguin,
-.cheetah {
+.cheetah,
+.alligators,
+.giraffe {
     display: none;
   }
   .circle {
@@ -2395,11 +2494,38 @@ form:invalid input[type=email] {
     padding-bottom: 0px;
     width: 320px;
     height: 500px;
+    position: relative;
+  }
+  .unshrinked {
+    height: 391px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    z-index: 20000000000;
+  }
+  .shaded-body {
+    background-color: rgba(0, 0, 0, 0.61);
+    z-index: 2000000000;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+  }
+  .cross-sign-active {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    color: orange;
+  }
+  .cross-sign {
+    display: none;
   }
   .block {
     width: 299px;
     height: 109px;
     margin: 0;
+    cursor: pointer;
   }
   .block-img {
     margin-left: 10px;
@@ -2429,6 +2555,13 @@ form:invalid input[type=email] {
     margin-bottom: 0px;
     margin-top: 5px;
     padding-top: 20px;
+  }
+  #testimonial7,
+#testimonial6,
+#testimonial5,
+#testimonial4,
+#last-block {
+    display: none;
   }
   .bar {
     display: none;
