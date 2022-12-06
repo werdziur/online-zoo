@@ -36,43 +36,68 @@ arrowOne.addEventListener('click', slider)
 arrowTwo.addEventListener('click', slider)
 
 // testimonials mobile
-let width = Math.max(window.screen.width, window.innerWidth)
+let width = window.innerWidth
 const blocks = document.querySelectorAll('.mobile-opinion')
-const testimonialOne = document.querySelector('#testimonial1')
-const testimonialTwo = document.querySelector('#testimonial2')
-const testimonialThree = document.querySelector('#testimonial3')
 const shadedBody = document.querySelector('.shade')
-
+let crossSign
 let unshrinked
 
 function unshrinkTestimonial() {
 	unshrinked = document.querySelector('.unshrinked')
 	if (unshrinked) {
 		unshrinked.classList.remove('unshrinked')
-        unshrinked.style.height = '109px'
-        shadedBody.classList.remove('shaded-body')
+		unshrinked.style.height = '109px'
+		shadedBody.classList.remove('shaded-body')
 	}
 	this.classList.add('unshrinked')
 	this.style.display = 'flex'
-    this.style.height = '391px'
-    this.style.width = '294px'
-    shadedBody.classList.add('shaded-body')
+	this.style.height = '391px'
+	this.style.width = '294px'
+	shadedBody.classList.add('shaded-body')
 }
 
 function unshadeBody() {
-    unshrinked = document.querySelector('.unshrinked')
-    if(unshrinked) {
-        unshrinked.classList.remove('unshrinked')
-        this.classList.remove('shaded-body')
-        unshrinked.style.height = '109px'
-    }
-		
-        if (width >= 640 || width < 1000) {
-            unshrinked.style.width = '600px'
-        } if (width < 640) {
-            unshrinked.style.width = '299px'
-        }
+	unshrinked = document.querySelector('.unshrinked')
+	if (unshrinked) {
+		unshrinked.classList.remove('unshrinked')
+		this.classList.remove('shaded-body')
+		unshrinked.style.height = '109px'
+	}
+	if (width >= 641 || width < 1000) {
+		unshrinked.style.width = '600px'
+	}
+	if (width < 641) {
+		unshrinked.style.width = '299px'
+	}
 }
 
-blocks.forEach(block => block.addEventListener('click', unshrinkTestimonial))
+if (width < 1000) {
+	blocks.forEach(block => block.addEventListener('click', unshrinkTestimonial))
+}
+
 shadedBody.addEventListener('click', unshadeBody)
+
+//slider 1600px
+const sliderTestimonials = document.getElementById('blocks')
+const blockTestimonials = sliderTestimonials.getElementsByClassName('block')
+let prevValue = document.querySelector('input[type="range"]').value
+console.log(prevValue)
+const inputSlider = document.querySelector('.line')
+let currValue
+let blocksAll = [...blockTestimonials]
+
+function moveSlider() {
+	currValue = document.querySelector('input[type="range"]').value
+	console.log(currValue)
+	if (currValue > prevValue) {
+		console.log(blocksAll)
+		firstItem = blocksAll.shift()
+		blocksAll.push(firstItem)
+	}
+	if (currValue < prevValue) {
+		firstItem = blocksAll.pop()
+		blocksAll.unshift(firstItem)
+	}
+}
+
+inputSlider.addEventListener('click', moveSlider)
