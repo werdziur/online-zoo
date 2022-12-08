@@ -87,7 +87,7 @@ let currValue
 
 function moveSlider() {
 	currValue = document.querySelector('input[type="range"]').value
-	sliderTestimonials.scrollLeft -= 125;
+	sliderTestimonials.append(blockTestimonials[0])
 }
 
 inputSlider.addEventListener('change', moveSlider)

@@ -37,3 +37,31 @@ function hideMenu() {
 
 burgerOpacity.addEventListener('click', hideMenu)
 closeBurger.addEventListener('click', hideMenu)
+
+//input amount
+const inputScale = document.querySelector('.scale-input')
+function changeInputAmount(e){
+	if(e.target.id === 'amount-5000') {
+		inputScale.setAttribute('value','5000')
+	} else if 
+		(e.target.id === 'amount-2000') {
+			inputScale.setAttribute('value','2000')}
+	 else if (e.target.id === 'amount-1000') {
+		inputScale.setAttribute('value','1000')
+	} else if (e.target.id === 'amount-500') {
+		inputScale.setAttribute('value','500')
+	}else if (e.target.id === 'amount-250') {
+		inputScale.setAttribute('value','250')
+	}else if (e.target.id === 'amount-100') {
+		inputScale.setAttribute('value','100')
+	}else if (e.target.id === 'amount-50') {
+		inputScale.setAttribute('value','50')
+	}else if (e.target.id === 'amount-25') {
+		inputScale.setAttribute('value','25')
+	}
+}
+
+	
+
+
+paymentAmountInput.forEach(input => input.addEventListener('click', changeInputAmount))
