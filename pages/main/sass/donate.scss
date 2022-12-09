@@ -1022,7 +1022,8 @@ form:invalid input[type='email'] {
 		font-size: 16px;
 		font-weight: 400;
 		color: #000000;
-		padding-bottom: 50px;
+		padding-bottom: 0px;
+		margin: 0px;
 	}
 
 	.scale-range {
@@ -1036,7 +1037,7 @@ form:invalid input[type='email'] {
 		padding: 10px;
 		margin: 10px;
 		z-index: -15;
-		margin-top: -25px;
+		margin-top: 25px;
 	}
 
 	.inside-line {
