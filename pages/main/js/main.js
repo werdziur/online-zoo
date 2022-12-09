@@ -84,20 +84,10 @@ let prevValue = document.querySelector('input[type="range"]').value
 console.log(prevValue)
 const inputSlider = document.querySelector('.line')
 let currValue
-let blocksAll = [...blockTestimonials]
 
 function moveSlider() {
 	currValue = document.querySelector('input[type="range"]').value
-	console.log(currValue)
-	if (currValue > prevValue) {
-		console.log(blocksAll)
-		firstItem = blocksAll.shift()
-		blocksAll.push(firstItem)
-	}
-	if (currValue < prevValue) {
-		firstItem = blocksAll.pop()
-		blocksAll.unshift(firstItem)
-	}
+	sliderTestimonials.append(blockTestimonials[0])
 }
 
-inputSlider.addEventListener('click', moveSlider)
+inputSlider.addEventListener('change', moveSlider)
