@@ -1975,17 +1975,17 @@ form:invalid input[type=email] {
     display: none;
   }
   .four {
-    height: 468px;
-    margin-top: 98px;
+    height: 700px;
+    margin-top: 70px;
     margin-bottom: 0px;
     width: 640px;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
   }
   .four::after {
     background-image: url("../assets/img/leav_foto tablet.png");
     padding: 5px 3px;
     right: 0px;
-    top: 3165px;
+    top: 3370px;
   }
   .blocks {
     flex-direction: column;
@@ -2477,7 +2477,7 @@ form:invalid input[type=email] {
     display: none;
   }
   .four {
-    height: 500px;
+    height: 600px;
     margin-top: 0px;
     margin-bottom: 0px;
     width: 320px;
@@ -2488,7 +2488,7 @@ form:invalid input[type=email] {
     background-image: url("../assets/img/leav_foto mobile.png");
     padding: 5px 3px;
     right: 0px;
-    top: 3870px;
+    top: 3970px;
   }
   .blocks {
     flex-direction: column;
